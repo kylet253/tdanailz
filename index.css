@@ -113,7 +113,9 @@ a {
     box-shadow: 2px 2px 8px #dedede;
     
 }
-
+    a:hover {
+        border: 2px solid #ffb6c1;  
+    }
 /*main box */
 .main {
     height: 604px;

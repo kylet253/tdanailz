@@ -118,6 +118,10 @@ a {
     color: #51335e;
     box-shadow: 2px 2px 8px #dedede;
 }
+
+    a:hover {
+        border: 2px solid #ffb6c1;
+    }
     /* FAQ Box */
 .faq-box {
     background-color: white;

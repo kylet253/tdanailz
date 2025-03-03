@@ -123,6 +123,9 @@ a {
     box-shadow: 2px 2px 8px #dedede;
 }
 
+    a:hover {
+        border: 2px solid #ffb6c1;
+    }
 /* designs box */
 .main {
     background-color: white;
