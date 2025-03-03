@@ -190,6 +190,7 @@ form{
     }
 
     form input {
+        font-family: "Lucida Console", "Lucida Sans Typewriter", monaco, "Bitstream Vera Sans Mono", monospace;
         display: block;
         margin-bottom: 3px; /* Space below inputs */
         border-color: #AA86BA;
@@ -198,8 +199,29 @@ form{
         width: 265px;
         height: 20px;
         border-radius: 5px;
-        color:#51335e;
+        color: black;
         font-size: 15px;
+        padding: 5px;
+    }
+
+.textarea {
+    width: 250px;
+    height: 100px; /* Tall box like textarea */
+    border: 1px solid #AA86BA;
+    border-radius: 5px;
+    font-size: 15px;
+    font-family: "Lucida Console", "Lucida Sans Typewriter", monaco, "Bitstream Vera Sans Mono", monospace;
+    color: black;
+    padding: 5px;
+    text-align: left;
+    display: block;
+    overflow-y: auto; /* Add scrollbar when text exceeds box */
+    line-height: 1.4;
+    white-space: pre-wrap; /* Forces text wrapping */
+    word-wrap: break-word;
+}
+    .textarea::placeholder {
+        text-align: left; /* Align placeholder text */
     }
 /*selected outline*/
 form input:focus {
@@ -210,15 +232,22 @@ form button {
     margin-top: 3px; /* Space above button */
 }
 
-textarea {
+.textarea {
     width: 250px; /* Same width as input boxes */
     height: 100px; /* Adjust height to make it bigger */
-    padding: 8px;
     border: 1px solid #AA86BA;
     border-radius: 5px;
     resize: none; /* Optional: Disables resizing */
     border: 1px solid #AA86BA;
     font-size: 15px;
+    vertical-align: top; /* Aligns the text area itself, not the content */
+    text-align: left; /* Aligns the text to the left */
+    resize: none; /* Optional: Prevents resizing */
+    overflow-wrap: break-word; /* Ensures text wraps inside the box */
+    word-wrap: break-word; /* For older browsers */
+    white-space: pre-wrap; /* Preserves line breaks and wraps text */
+    padding: 5px;
+    
 }
 
 button {

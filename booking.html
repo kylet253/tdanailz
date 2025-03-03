@@ -58,7 +58,10 @@
                 <br>
 
                 <label for="message">Nail Ideas:</label>
-                <textarea rows:"4" cols="30"></textarea>
+                <textarea id="text" name="text" required class="textarea" placeholder="Write your ideas here..."></textarea>
+                <input type="hidden" name="hiddenText" id="hiddenText">
+                <br />
+
                 <br />
                 <label for="date">Select Date:</label>
                 <input type="date" id="date" name="date" required>
@@ -92,6 +95,11 @@
         document.getElementById("bookingForm").addEventListener("submit", function(event) {
             event.preventDefault();
             document.getElementById("confirmation").style.display = "block";
+        });
+    </script>
+    <script>
+        document.querySelector('.textarea').addEventListener('input', function () {
+            document.querySelector('#hiddenText').value = this.value;
         });
     </script>
 </body>
