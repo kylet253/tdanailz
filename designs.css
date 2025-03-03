@@ -14,12 +14,12 @@ body
 }
 /* White Container - Now Starts from the Top & Expands Naturally */
 .container {
-    width: 1108px;
+    width: 1100px;
     height: 1110px;
     margin: auto;
     gap: 20px;
     border: 7px solid #fce3f9;
-    background-color: white;
+    background-color: #fce3f9;
     overflow: hidden;
     outline-width: 1px;
     outline-style: solid;
@@ -34,6 +34,7 @@ body
 /*website banner*/
 .header {
     height: 205px;
+   
     background-image: url('Untitled_design_4.jpg');
 }
    
@@ -51,7 +52,7 @@ body
     background-image: url('side_backs.jpg');
     height: 150px;
     background-color: white;
-    width: 230px;
+    width: 225px;
     border-width: 1px;
     border-color: #AA86BA;
     border-style: solid;
@@ -63,7 +64,7 @@ body
     outline-width: 5px;
     display: flex;
     flex-direction: column;
-    margin-left: 3px;
+    margin-left: 0px;
 }
 
 /*directory box title*/
@@ -80,19 +81,19 @@ body
     background-image: url('side_backs.jpg');
     height: 653px;
     background-color: white;
-    width: 270px;
+    width: 265px;
     border-width: 1px;
     border-color: #AA86BA;
     border-style: solid;
     margin-left: 0px;
-    margin-top: 10px;
+    margin-top: 9px;
     box-shadow: 2px 2px 8px #dedede;
     outline-style: solid;
     outline-color: #fce3f9;
     outline-width: 5px;
     display: flex;
     flex-direction: column;
-    margin-left: 3px;
+    margin-left: 0px;
     overflow:hidden;
 }
 
@@ -137,14 +138,16 @@ a {
     outline-style: solid;
     outline-color: #fce3f9;
     outline-width: 5px;
-    width: 780px;
+    width: 783px;
     height:835px;
     display: flex;
     flex-direction: column;
     background-image: url("gallerybg.png");
     position:relative;
-    margin-left: 284px;
-    margin-top: -857px;
+    margin-left: 275px;
+    
+    margin-top: -856px;
+    
 }
 .title{
     font-family: 'CustomFont1', sans-serif;
@@ -183,7 +186,7 @@ h3 {
     border: 0px solid pink;
     margin-top: -20px;
     margin-left: -20px;
-    width: 270px;
+    width: 265px;
     height: 30px;
     text-align: center;
     background-image: linear-gradient(#fcedf1, #fcd4dc);
@@ -290,6 +293,8 @@ p {
     outline-color: #AA86BA;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
+    margin-left:2px;
+    
 }
 
 /* Hover Effect - Image Pops Out */
