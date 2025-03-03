@@ -38,8 +38,6 @@ body
     background-image: url('Untitled_design_4.jpg');
 }
    
-}
-
 .left-container{
     display: flex;
     flex-direction: column;
@@ -146,7 +144,7 @@ a {
     position:relative;
     margin-left: 275px;
     
-    margin-top: -856px;
+    margin-top: -855px;
     
 }
 .title{
