@@ -22,7 +22,7 @@ body
     background-color: white;
     height: 900px;
     overflow: hidden;
-    margin-top: 37px;
+    margin-top: 0px;
     outline-color: #AA86BA;
     outline-style: solid;
     outline-width: 1px;
@@ -259,6 +259,7 @@ button {
     height: 40px;
     border-radius: 15px;
     border: 1px solid #AA86BA;
+    margin-top: -10px;
 }
     /*button hover color*/
     button:hover {

@@ -18,7 +18,7 @@ body
     outline-width: 1px;
     outline-style: solid;
     outline-color: #AA86BA;
-    margin-top: 37px;
+    margin-top: 0px;
 }
 
 .box {
@@ -111,6 +111,7 @@ a {
     background-image: linear-gradient(#faedd9,#fae0b9 );
     color: #51335e;
     box-shadow: 2px 2px 8px #dedede;
+    
     
 }
     a:hover {
@@ -355,3 +356,4 @@ p {
     color: #c4549d;
     margin-top: 80px;
 }
+
