@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <link href="booking.css" rel="stylesheet">
+</head>
+<body>
+	
+    <div class="container">
+        <div class="box header"></div>
+
+
+
+
+
+        <!--navigation-->
+        <div class="box directory">
+            <h3></h3>
+            <p class="directory-text">Directory ‧₊˚✩彡</p>
+
+            <a href="index.html" class="index-link">Home</a>
+            <br />
+
+            <a href="designs.html" class="designs-link">Designs</a>
+            <br />
+
+            <a href="faq.html" class="faq-link">FAQ</a>
+
+        </div>
+
+
+
+      
+
+        <!--mainfeed/Booking Form-->
+        <div class="box main">
+            <h4></h4>
+            <div id="topborder">
+                <img src="smallstarborder.gif" />
+                <img src="smallstarborder.gif" />
+                <img src="smallstarborder.gif" />
+            </div>
+
+            <h2>Book Your Appointment</h2>
+            <p>Fill out the form below to book your nail appointment.</p>
+
+            <!---->
+            <!--the actual form-->
+            <form action="https://formsubmit.co/trankyle253@yahoo.com" method="POST">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+                <br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <br>
+
+                <label for="message">Nail Ideas:</label>
+                <textarea rows:"4" cols="30"></textarea>
+                <br />
+                <label for="date">Select Date:</label>
+                <input type="date" id="date" name="date" required>
+                <br>
+
+                <label for="time">Select Time:</label>
+                <input type="time" id="time" name="time" required>
+                <br>
+
+                <button type="submit">Book Now</button>
+                <br>
+            </form>
+            <p id="confirmation" style="color:green; margin-top:10px; display:none;">Booking Confirmed!</p>
+        </div>
+
+        <div class="right-side-banner">
+            <img src="rollingseal.gif" class="seal" />
+            <img src="blinkinggirlpink.gif" class="pinkgirl" />
+
+        </div>
+        <div class="left-side-banner">
+            <img src="sailormooncurt.gif" class="sailor" />
+        </div>
+     
+        
+
+    </div>
+
+
+    <script>
+        document.getElementById("bookingForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            document.getElementById("confirmation").style.display = "block";
+        });
+    </script>
+</body>
+</html>

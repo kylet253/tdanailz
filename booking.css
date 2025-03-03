@@ -1,0 +1,299 @@
+@font-face {
+    font-family: 'CustomFont1';
+    src: url('PressStart2P-Regular.ttf') format('truetype');
+}
+/* website background image */
+body
+{
+    overflow-x: hidden;
+    background-image: url('mainwebsite-backdrop.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 700px;
+    background-attachment: fixed;
+}
+/*the entirety of the content*/
+.container {
+    width: 1100px;
+    margin: auto;
+    gap: 20px;
+    border: 7px solid #fce3f9;
+    background-color: white;
+    height: 900px;
+    overflow: hidden;
+    margin-top: 37px;
+    outline-color: #AA86BA;
+    outline-style: solid;
+    outline-width: 1px;
+}
+
+.box {
+    border: 1px solid #ffb6c1;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+}
+
+/*website banner*/
+.header {
+    height: 205px;
+    background-image: url('Untitled_design_4.jpg');
+   
+}
+/*updates box*/
+
+    /*directory box*/
+.directory {
+    background-image: url('side_backs.jpg');
+    height: 150px;
+    background-color: white;
+    width: 210px;
+    border-width: 1px;
+    border-color: #AA86BA;
+    border-style: solid;
+    margin-left: 0px;
+    margin-top: 5px;
+    box-shadow: 2px 2px 8px #dedede;
+    outline-style: solid;
+    outline-color: #fce3f9;
+    outline-width: 5px;
+}
+
+/*directory box title*/
+.directory-text {
+    font-family: 'CustomFont1';
+    font-size: 10px;
+    text-align: center;
+    margin-top: -40px;
+    color: #744987;
+}
+
+/*navigation buttons*/
+a {
+    font-family: "Lucida Console", "Lucida Sans Typewriter", monaco, "Bitstream Vera Sans Mono", monospace;
+    font-size: 13px;
+    display: inline-block;
+    width: 150px;
+    height: 30px;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid #ffb6c1;
+    border-radius: 25px;
+    box-sizing: border-box;
+    margin-top: 10px;
+    margin-bottom: 6px;
+    margin-left: 30px;
+    text-decoration: none;
+    background-image: linear-gradient(#faedd9,#fae0b9 );
+    color: #51335e;
+    box-shadow: 2px 2px 8px #dedede;
+}
+
+/*main box */
+.main {
+    height: 604px;
+    background-color: white;
+    background-image: url(melody_notepad.jpg);
+    width: 538px;
+    float: right;
+    margin-right: 260px;
+    margin-top: -192px;
+    border-width: 1px;
+    border-color: #AA86BA;
+    border-style: solid;
+    box-shadow: 2px 2px 8px #dedede;
+    outline-style: solid;
+    outline-color: #fce3f9;
+    outline-width: 5px;
+    
+}
+
+
+
+/*subheaders*/
+h3 {
+    border: 0px solid pink;
+    margin-top: -20px;
+    margin-left: -20px;
+    width: 250px;
+    height: 30px;
+    text-align: center;
+    background-image: linear-gradient(#fcedf1, #fcd4dc);
+    box-shadow: 2px 2px 8px #dedede;
+}
+
+/*the gif star border*/
+#topborder {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 571px;
+    margin-top: -58px;
+    margin-left: -17px;
+    padding: 10px 0;
+    overflow: hidden;
+}
+/*mainfeed header*/
+h4 {
+    border: 0px solid pink;
+    margin-top: -20px;
+    margin-left: -20px;
+    width: 578px;
+    height: 30px;
+    text-align: center;
+    background-image: linear-gradient(#faf0fc, #EEBDE9);
+    box-shadow: 2px 2px 8px #dedede;
+}
+
+/*this is the header text in pink*/
+h2 {
+    font-family: "Lucida Console", "Lucida Sans Typewriter", monaco, "Bitstream Vera Sans Mono", monospace;
+    font-size: 24px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    line-height: 26.4px;
+    text-align: center;
+    color: #c4549d;
+}
+
+/*this is the body text and updates text*/
+p {
+    font-family: "Lucida Console", "Lucida Sans Typewriter", monaco, "Bitstream Vera Sans Mono", monospace;
+    font-size: 15px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+    color: #51335e;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    text-align: center;
+}
+
+    form label {
+        text-align: center;
+        display: block;
+        margin-bottom: 3px; /* Space below labels */
+        color: #51335e;
+        font-family: "Lucida Console", "Lucida Sans Typewriter", monaco, "Bitstream Vera Sans Mono", monospace;
+    }
+
+    form input {
+        display: block;
+        margin-bottom: 3px; /* Space below inputs */
+        border-color: #AA86BA;
+        border-width: 1px;
+        border-style: solid;
+        width: 265px;
+        height: 20px;
+        border-radius: 5px;
+        color:#51335e;
+        font-size: 15px;
+    }
+/*selected outline*/
+form input:focus {
+    outline: 2px solid #ffb6c1; /* Neon pink Y2K style */
+    background-color: white; /* Light pink background when selected */
+}
+form button {
+    margin-top: 3px; /* Space above button */
+}
+
+textarea {
+    width: 250px; /* Same width as input boxes */
+    height: 100px; /* Adjust height to make it bigger */
+    padding: 8px;
+    border: 1px solid #AA86BA;
+    border-radius: 5px;
+    resize: none; /* Optional: Disables resizing */
+    border: 1px solid #AA86BA;
+    font-size: 15px;
+}
+
+button {
+    font-family: "Lucida Console", "Lucida Sans Typewriter", monaco, "Bitstream Vera Sans Mono", monospace;
+    font-size: 16px;
+    color: #51335e;
+    background-image: linear-gradient(#faf0fc, #EEBDE9);
+    width: 100px;
+    height: 40px;
+    border-radius: 15px;
+    border: 1px solid #AA86BA;
+}
+    /*button hover color*/
+    button:hover {
+        outline: 2px solid #ffb6c1; /* Neon pink Y2K style */
+        background-color: white; /* Light pink background when selected */
+    }
+/*button click outline*/
+button:focus {
+    outline: 2px solid #ffb6c1; /* Neon pink Y2K style */
+    background-color: white; /* Light pink background when selected */
+}
+/*selected outline*/
+textarea:focus {
+    outline: 2px solid #ffb6c1; /* Neon pink Y2K style */
+    background-color: white; /* Light pink background when selected */
+}
+
+.left-side-banner {
+    background-color: white;
+    height: 442px;
+    background-color: white;
+    width: 250px;
+    border-width: 1px;
+    border-color: #AA86BA;
+    border-style: solid;
+    margin-left: 0px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 8px #dedede;
+    outline-style: solid;
+    outline-color: #fce3f9;
+    outline-width: 5px;
+}
+
+.sailor{
+    height: 442px;
+    width: 250px;
+}
+.right-side-banner {
+    
+    background-color: white;
+    border-width: 1px;
+    border-color: #AA86BA;
+    border-style: solid;
+    box-shadow: 2px 2px 8px #dedede;
+    outline-style: solid;
+    outline-color: #fce3f9;
+    outline-width: 5px;
+    height: 644px;
+    width: 250px;
+    margin-top: -646px;
+    float: right;
+    margin-left: 300px;
+}
+
+.seal {
+    margin-left: 4px;
+    margin-top: 4px;
+    border: 1px solid #AA86BA;
+    overflow: hidden;
+    outline-style: solid;
+    outline-color: #fce3f9;
+    outline-width: 4px;
+}
+
+
+.pinkgirl {
+    width: 250px;
+    height: 417px;
+    overflow: hidden;
+    margin-top: -3px;
+}

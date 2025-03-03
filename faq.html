@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ Page</title>
+    <link rel="stylesheet" href="faq.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Header Section -->
+        <div class="box header"></div>
+
+        <!-- Main Layout (Sidebar + FAQ) -->
+        <div class="content-wrapper">
+            <!-- Left Sidebar (Directory) -->
+            <div class="box directory">
+                <h3></h3>
+                <p class="directory-text">Directory ‧₊˚✩彡</p>
+                <a href="index.html" class="home-link">Home</a>
+                <a href="booking.html" class="booking-link">Booking</a>
+                <a href="designs.html" class="designs-link">Designs</a>
+            </div>
+            <div class="side-banner">
+                <img src="sailorig.gif" class="sailorig" />
+            </div>
+
+            <!-- FAQ Box -->
+
+            <div class="box faq-box">
+                <div id="topborder">
+                    <img src="smallstarborder.gif" />
+                    <img src="smallstarborder.gif" />
+                    <img src="smallstarborder.gif" />
+                    <img src="smallstarborder.gif" />
+                    <img src="smallstarborder.gif" />
+                </div>
+
+                <h2 class="faq-title">Frequently Asked Questions</h2>
+                
+
+                <!-- FAQ 1 -->
+                <div class="faq">
+                    <button class="accordion">
+                        What is the best way to contact you?
+                        <img src="heartmessagebuton.gif" class="dropdown-arrow">
+                    </button>
+                    <div class="panel">
+                        <p>Reaching me through my Instagram page (linked on the homepage) is the best way! Feel free to send a message.</p>
+                    </div>
+                
+
+                <!-- FAQ 2 -->
+                
+                    <button class="accordion">
+                        What are your business hours?
+                        <img src="heartmessagebuton.gif" class="dropdown-arrow">
+                    </button>
+                    <div class="panel">
+                        <p>Specified availability can be discussed at consultation. </p>
+                    </div>
+                
+
+                <!-- FAQ 3 -->
+                
+                    <button class="accordion">
+                        Do you offer refunds?
+                        <img src="heartmessagebuton.gif" class="dropdown-arrow">
+                    </button>
+
+                    <div class="panel">
+                        <p>All sales are final. However, feel free to reach out if you have any concerns!</p>
+                    </div>
+                    
+                    <div class="faq">
+                        <button class="accordion">
+                            Do you allow walk-ins?
+                            <img src="heartmessagebuton.gif" class="dropdown-arrow">
+                        </button>
+                       
+                        <div class="panel">
+                            <p>No walk-ins at the moment, appointments only.</p>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!-- JavaScript for Accordion FAQ -->
+    <script>
+       var acc = document.getElementsByClassName("accordion");
+for (var i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function () {
+        this.classList.toggle("active"); // Toggles arrow flip
+        this.parentElement.classList.toggle("active");
+
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+        }
+    });
+}
+    </script>
+
+</body>
+</html>

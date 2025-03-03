@@ -1,0 +1,358 @@
+@font-face {
+    font-family: 'CustomFont1';
+    src: url('PressStart2P-Regular.ttf') format('truetype');
+}
+body
+{
+    overflow-x: hidden;
+    background-image: url('mainwebsite-backdrop.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: auto;
+    background-attachment: fixed;
+}
+/* White Container - Now Starts from the Top & Expands Naturally */
+.container {
+    width: 1108px;
+    height: 1110px;
+    margin: auto;
+    gap: 20px;
+    border: 7px solid #fce3f9;
+    background-color: white;
+    overflow: hidden;
+    outline-width: 1px;
+    outline-style: solid;
+    outline-color: #AA86BA;
+    margin-top: 37px;
+}
+.box {
+    border: 1px solid #ffb6c1;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+}
+/*website banner*/
+.header {
+    height: 205px;
+    background-image: url('untitled_design_4.jpg');
+}
+   
+}
+
+.left-container{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+}
+
+
+    /*directory box*/
+.directory {
+    background-image: url('side_backs.jpg');
+    height: 150px;
+    background-color: white;
+    width: 230px;
+    border-width: 1px;
+    border-color: #AA86BA;
+    border-style: solid;
+    margin-left: 0px;
+    margin-top: 5px;
+    box-shadow: 2px 2px 8px #dedede;
+    outline-style: solid;
+    outline-color: #fce3f9;
+    outline-width: 5px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 3px;
+}
+
+/*directory box title*/
+.directory-text {
+    font-family: 'CustomFont1';
+    font-size: 10px;
+    text-align: center;
+    margin-top: -40px;
+    color: #744987;
+    
+}
+
+.sidebanner {
+    background-image: url('side_backs.jpg');
+    height: 653px;
+    background-color: white;
+    width: 270px;
+    border-width: 1px;
+    border-color: #AA86BA;
+    border-style: solid;
+    margin-left: 0px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 8px #dedede;
+    outline-style: solid;
+    outline-color: #fce3f9;
+    outline-width: 5px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 3px;
+    overflow:hidden;
+}
+
+.long-banner{
+    width:300px;
+    height: 800px;
+    margin-top: -70px;
+}
+/*navigation buttons*/
+a {
+    font-family: "Lucida Console", "Lucida Sans Typewriter", monaco, "Bitstream Vera Sans Mono", monospace;
+    font-size: 13px;
+    display: inline-block;
+    width: 150px;
+    height: 30px;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid #ffb6c1;
+    border-radius: 25px;
+    box-sizing: border-box;
+    margin-top: 10px;
+    margin-bottom: 6px;
+    margin-left: 40px;
+    text-decoration: none;
+    background-image: linear-gradient(#faedd9,#fae0b9 );
+    color: #51335e;
+    box-shadow: 2px 2px 8px #dedede;
+}
+
+/* designs box */
+.main {
+    background-color: white;
+    margin: 5px 5px 10px 10px;
+    padding-top: 0px;
+    border-color: #AA86BA;
+    border-style: solid;
+    box-shadow: 2px 2px 8px #dedede;
+    outline-style: solid;
+    outline-color: #fce3f9;
+    outline-width: 5px;
+    width: 780px;
+    height:835px;
+    display: flex;
+    flex-direction: column;
+    background-image: url("gallerybg.png");
+    position:relative;
+    margin-left: 284px;
+    margin-top: -857px;
+}
+.title{
+    font-family: 'CustomFont1', sans-serif;
+    font-size: 28px;
+    color: #c4549d;
+    text-align: center;
+    background: linear-gradient(#fcedf1, #fcd4dc);
+    padding: 10px 0;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 2px 2px 8px #dedede;
+    margin: 20px auto;
+}
+
+
+/*misc box title*/
+.misc-text {
+    font-family: 'CustomFont1';
+    font-size: 10px;
+    text-align: center;
+    margin-top: -40px;
+    color: #744987;
+}
+
+
+
+.box main {
+    top: 0;
+    text-align: center;
+    
+}
+
+/*subheaders*/
+h3 {
+    border: 0px solid pink;
+    margin-top: -20px;
+    margin-left: -20px;
+    width: 270px;
+    height: 30px;
+    text-align: center;
+    background-image: linear-gradient(#fcedf1, #fcd4dc);
+    box-shadow: 2px 2px 8px #dedede;
+}
+
+/*the gif star border*/
+#topborder {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 809px;
+    padding: 0px;
+    overflow: hidden;
+    margin-left:-15px;
+}
+
+
+/*header text*/
+h2 {
+    font-family: "Lucida Console", "Lucida Sans Typewriter", monaco, "Bitstream Vera Sans Mono", monospace;
+    font-size: 24px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    line-height: 26.4px;
+    text-align: center;
+    color: #c4549d;
+}
+
+/*this is the body text and updates text*/
+p {
+    font-family: "Lucida Console", "Lucida Sans Typewriter", monaco, "Bitstream Vera Sans Mono", monospace;
+    font-size: 15px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+/* Title */
+.title {
+    font-family: "Lucida Console", "Lucida Sans Typewriter", monaco, "Bitstream Vera Sans Mono", monospace;
+    font-size: 26px;
+    color: #633e73;
+    text-align: center;
+    background: linear-gradient(#fcedf1, #fcd4dc);
+    padding: 10px 0;
+    border-radius: 25px;
+    width: 20%;
+    max-width: 600px;
+    box-shadow: 2px 2px 8px #dedede;
+    margin: 20px auto;
+    outline-width: 1px;
+    outline-style: solid;
+    outline-color: #AA86BA;
+}
+
+/* Navigation Bar */
+.navigation {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 10px;
+}
+
+/* Navigation Buttons */
+.navigation a {
+    text-decoration: none;
+    font-family: 'CustomFont1', sans-serif;
+    color: black;
+    font-size: 16px;
+    background-color: #cad1ec;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+
+/* Hover effect for navigation */
+.navigation a:hover {
+    background-color: #9ba6cf;
+}
+
+/* Gallery Grid */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    justify-content: center;
+    width: 100%;
+    max-width: 900px;
+    background-color: transparent;
+}
+
+/* Individual Gallery Items */
+.gallery-item {
+    text-align: center;
+    background: white;
+    padding: 10px;
+    width: 225px;
+    outline-style: solid;
+    outline-width: 1px;
+    outline-color: #AA86BA;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect - Image Pops Out */
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+
+/* Image Styling */
+.gallery-img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    cursor: pointer;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    outline-style: solid;
+    outline-width: 1px;
+    outline-color: #AA86BA;
+}
+
+/* Description Text */
+.description {
+    font-family: "Lucida Console", "Lucida Sans Typewriter", monaco, "Bitstream Vera Sans Mono", monospace;
+    font-size: 14px;
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+    color: #51335e;
+}
+
+/* Lightbox for Enlarged Images */
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+/* Lightbox Image */
+.lightbox-img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* Close Button for Lightbox */
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+/* Close Button Hover Effect */
+.close-btn:hover {
+    background: rgba(255, 0, 0, 0.8);
+}

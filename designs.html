@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="designs.css">
+</head>
+<body>
+    
+
+    <div class="container">
+        <div class="box header"></div>
+        <!-- Left Section (Updates, Navigation, Misc) -->
+        <div class="left-container">
+            <!-- Updates Box -->
+            <!-- <div class="box updates">
+            <h3></h3>
+            <p class="updates-text">Updates</p>
+            <p>03/02/25 - Revamped the entire homepage</p>
+            <p>03/01/25 - Started edits based on feedback</p>
+        </div> -->
+            <!-- Navigation / Directory Box -->
+            <div class="box directory">
+                <h3></h3>
+                <p class="directory-text">Directory ‧₊˚✩彡</p>
+                <a href="index.html" class="Home-link">Home</a>
+                <a href="booking.html" class="booking-link">Booking</a>
+                <a href="faq.html" class="faq-link">FAQ</a>
+            </div>
+            <div class="sidebanner">
+               <img src="sakura_banner.gif" class="long-banner" />
+            </div>
+            <!-- Misc Box -->
+            <!-- <div class="box misc">
+            <h3></h3>
+            <p class="misc-text">Misc.</p>
+            <a href="https://www.instagram.com/tdanailz/">Instagram</a>
+        </div> -->
+            <!-- Music Section -->
+            <!-- <div class="box music">
+            <h3></h3>
+            <p class="music-text">Music</p>
+            <audio controls loop>
+                <source src="my melody - knock2.mp3" type="audio/mpeg" />
+            </audio>
+            <img src="chii-giffy.gif" class="music-image" />
+        </div> -->
+        </div>
+        <!-- Center Section - Gallery -->
+        <div class="box main">
+           
+            <div id="topborder">
+                <img src="smallstarborder.gif" />
+                <img src="smallstarborder.gif" />
+                <img src="smallstarborder.gif" />
+                <img src="smallstarborder.gif" />
+                <img src="smallstarborder.gif" />
+            </div>
+            <h3 class="title">Designs</h3>
+
+
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="nail2.jpg" alt="Image 1" class="gallery-img" onclick="openLightbox(this)">
+                    <div class="description">Miffy-themed</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="nail3.jpg" alt="Image 2" class="gallery-img" onclick="openLightbox(this)">
+                    <div class="description">Inspired by Cambodian gold jewelry</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="nail4.jpg" alt="Image 3" class="gallery-img" onclick="openLightbox(this)">
+                    <div class="description">Soft pastel pink nails with a marble swirl design and delicate heart-shaped accents, perfect for a romantic look.</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="nail5.jpg" alt="Image 4" class="gallery-img" onclick="openLightbox(this)">
+                    <div class="description">Bold autumn-inspired nails with warm brown tones, golden accents, and abstract black patterns, ideal for a striking statement.</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="nail6.jpg" alt="Image 5" class="gallery-img" onclick="openLightbox(this)">
+                    <div class="description">Chic pastel-colored nails with delicate starry and gradient patterns, perfect for a dreamy aesthetic.</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="nail7.jpg" alt="Image 6" class="gallery-img" onclick="openLightbox(this)">
+                    <div class="description">Modern minimalistic nails featuring sleek neutral tones and subtle geometric patterns for a clean, stylish look.</div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Lightbox Modal -->
+        <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+            <span class="close-btn" onclick="closeLightbox()">✖</span>
+            <img id="lightbox-img" class="lightbox-img">
+        </div>
+
+        <script>
+            function openLightbox(imgElement) {
+                const lightbox = document.getElementById("lightbox");
+                const lightboxImg = document.getElementById("lightbox-img");
+                lightbox.style.display = "flex";
+                lightboxImg.src = imgElement.src;
+            }
+
+            function closeLightbox() {
+                document.getElementById("lightbox").style.display = "none";
+            }
+        </script>
+    </div>
+</body>
+</html>

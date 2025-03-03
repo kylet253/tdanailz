@@ -1,0 +1,236 @@
+@font-face {
+    font-family: 'CustomFont1';
+    src: url('PressStart2P-Regular.ttf') format('truetype');
+}
+
+body {
+    overflow-x: hidden;
+    background-image: url('mainwebsite-backdrop.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: auto;
+    background-attachment: fixed;
+}
+
+/* Main White Container */
+.container {
+    width: 1108px;
+    height: 875px;
+    margin: auto;
+    gap: 20px;
+    border: 7px solid #fce3f9;
+    background-color: white;
+    overflow: hidden;
+    outline-width: 1px;
+    outline-style: solid;
+    outline-color: #AA86BA;
+    margin-top: 37px;
+}
+.box {
+    border: 1px solid #ffb6c1;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+} 
+
+/* Header Banner */
+.header {
+    height: 205px;
+    background-image: url('untitled_design_4.jpg');
+}
+
+/* Flexbox for Layout */
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+}
+
+/* Directory (Sidebar) */
+.directory {
+    background-image: url('side_backs.jpg');
+    height: 150px;
+    background-color: white;
+    width: 230px;
+    border-width: 1px;
+    border-color: #AA86BA;
+    border-style: solid;
+    margin-left: 0px;
+    margin-top: 5px;
+    box-shadow: 2px 2px 8px #dedede;
+    outline-style: solid;
+    outline-color: #fce3f9;
+    outline-width: 5px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 3px;
+}
+.directory-text {
+    font-family: 'CustomFont1';
+    font-size: 10px;
+    text-align: center;
+    margin-top: -37px;
+    color: #744987;
+}
+
+.side-banner {
+    background-image: url('side_backs.jpg');
+    height: 418px;
+    background-color: white;
+    width: 270px;
+    border-width: 1px;
+    border-color: #AA86BA;
+    border-style: solid;
+    margin-left: 0px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 8px #dedede;
+    outline-style: solid;
+    outline-color: #fce3f9;
+    outline-width: 5px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 3px;
+    overflow: hidden;
+}
+.sailorig {
+    width: 320px;
+    height: 700px;
+    margin-top: -33px;
+}
+/* Centering Directory Buttons */
+a {
+    font-family: "Lucida Console", "Lucida Sans Typewriter", monaco, "Bitstream Vera Sans Mono", monospace;
+    font-size: 13px;
+    display: inline-block;
+    width: 150px;
+    height: 30px;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid #ffb6c1;
+    border-radius: 25px;
+    box-sizing: border-box;
+    margin-top: 10px;
+    margin-bottom: 6px;
+    margin-left: 40px;
+    text-decoration: none;
+    background-image: linear-gradient(#faedd9,#fae0b9 );
+    color: #51335e;
+    box-shadow: 2px 2px 8px #dedede;
+}
+    /* FAQ Box */
+.faq-box {
+    background-color: white;
+    margin: 5px 5px 10px 10px;
+    padding-top: 0px;
+    border-color: #AA86BA;
+    border-style: solid;
+    box-shadow: 2px 2px 8px #dedede;
+    outline-style: solid;
+    outline-color: #fce3f9;
+    outline-width: 5px;
+    width: 780px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    background-image: url("gallerybg.png");
+    position: relative;
+    margin-left: 284px;
+    margin-top: -622px;
+    overflow: hidden;
+}
+
+/* FAQ Title */
+.faq-title {
+    font-family: "Lucida Console", "Lucida Sans Typewriter", monaco, "Bitstream Vera Sans Mono", monospace;
+    font-size: 28px;
+    color: #633e73;
+    text-align: center;
+    background: linear-gradient(#fcedf1, #fcd4dc);
+    padding: 10px 0;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 2px 2px 8px #dedede;
+    margin: 20px auto;
+    outline-style: solid;
+    outline-width: 1px;
+    outline-color: #AA86BA;
+}
+
+
+
+
+/* FAQ Accordion */
+.accordion {
+    font-family: "Lucida Console", "Lucida Sans Typewriter", monaco, "Bitstream Vera Sans Mono", monospace;
+    background-color: white;
+    color: #633e73;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #633e73;
+    text-align: left;
+    font-size: 20px;
+    transition: 0.4s;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between; /* Aligns text and arrow */
+    align-items: center;
+}
+
+/* Arrow Image */
+.dropdown-arrow {
+    width: 20px;
+    height: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Flip arrow when active */
+.accordion.active .dropdown-arrow {
+    transform: rotate(180deg);
+}
+
+.accordion:hover {
+    background-color: #fcd4dc;
+}
+
+.active, .accordion:focus {
+    background-color: #fcd4dc;
+}
+
+/* FAQ Panel (Dropdown) */
+.panel {
+    padding: 10px;
+    display: none;
+    background-color: white;
+    border: 1px solid #fcd4dc;
+    border-radius: 5px;
+    margin-top: 5px;
+    font-family: "Lucida Console", "Lucida Sans Typewriter", monaco, "Bitstream Vera Sans Mono", monospace;
+    color: #633e73;
+    font-size: 15px;
+}
+
+h3 {
+    border: 0px solid pink;
+    margin-top: -20px;
+    margin-left: -20px;
+    width: 270px;
+    height: 30px;
+    text-align: center;
+    background-image: linear-gradient(#fcedf1, #fcd4dc);
+    box-shadow: 2px 2px 8px #dedede;
+}
+
+/*the gif star border*/
+#topborder {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 809px;
+    padding: 0px;
+    overflow: hidden;
+    margin-left: -15px;
+}
+
