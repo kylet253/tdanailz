@@ -196,7 +196,7 @@ form{
         border-color: #AA86BA;
         border-width: 1px;
         border-style: solid;
-        width: 265px;
+        width: 250px;
         height: 20px;
         border-radius: 5px;
         color: black;
@@ -204,9 +204,9 @@ form{
         padding: 5px;
     }
 
-.textarea {
-    width: 250px;
-    height: 100px; /* Tall box like textarea */
+form textarea {
+    width: 265px; /* Match the other input fields */
+    height: 100px; /* Keep the height */
     border: 1px solid #AA86BA;
     border-radius: 5px;
     font-size: 15px;
@@ -214,11 +214,11 @@ form{
     color: black;
     padding: 5px;
     text-align: left;
-    display: block;
-    overflow-y: auto; /* Add scrollbar when text exceeds box */
-    line-height: 1.4;
-    white-space: pre-wrap; /* Forces text wrapping */
+    overflow-y: auto;
+    white-space: pre-wrap;
     word-wrap: break-word;
+    resize: none;
+    outline: none;
 }
     .textarea::placeholder {
         text-align: left; /* Align placeholder text */
