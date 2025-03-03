@@ -1,0 +1,40 @@
+﻿@font-face {
+    font-family: 'CustomFont1';
+    src: url('PressStart2P-Regular.ttf') format('truetype');
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+    flex-direction: column;
+}
+
+p {
+    font-family: CustomFont1;
+    font-size: 30px;
+    align-self: center;
+    margin-left: 11px;
+    color: #51335e;
+}
+
+a {
+    font-family: "Lucida Console", "Lucida Sans Typewriter", monaco, "Bitstream Vera Sans Mono", monospace;
+    font-size: 24px;
+    align-self: center;
+    color: #bd047b;
+    text-decoration: none;
+}
+a:hover{
+    background-color: lightpink;
+    color: white;
+}
+
+.stuff {
+    border: 1px solid #AA86BA;
+    outline: 10px solid #fce3f9;
+    background-color: white;
+}
