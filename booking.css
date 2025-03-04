@@ -64,7 +64,7 @@ body
     font-family: 'CustomFont1';
     font-size: 10px;
     text-align: center;
-    margin-top: -40px;
+    margin-top: -41px;
     color: #744987;
 }
 
@@ -125,6 +125,7 @@ h3 {
     text-align: center;
     background-image: linear-gradient(#fcedf1, #fcd4dc);
     box-shadow: 2px 2px 8px #dedede;
+    outline: 1px solid #AA86BA;
 }
 
 /*the gif star border*/
@@ -267,10 +268,10 @@ button {
         background-color: white; /* Light pink background when selected */
     }
 /*button click outline*/
-button:focus {
-    outline: 2px solid #ffb6c1; /* Neon pink Y2K style */
-    background-color: white; /* Light pink background when selected */
-}
+    button:focus {
+        outline: 2px solid #ffb6c1; /* Neon pink Y2K style */
+        
+    }
 /*selected outline*/
 textarea:focus {
     outline: 2px solid #ffb6c1; /* Neon pink Y2K style */
@@ -331,3 +332,57 @@ textarea:focus {
     overflow: hidden;
     margin-top: -3px;
 }
+
+
+/*footer stuff*/
+footer {
+    width: 100%; /* Full width for consistent centering */
+    text-align: center; /* Centers text horizontally */
+    position: relative; /* Use relative instead of absolute to avoid fixed positioning issues */
+    margin-top: -10px;
+    display: flex;
+    justify-content: center; /* Keeps content centered */
+    align-items: center; /* Vertically aligns content */
+    margin-left: 113px;
+}
+
+    footer p {
+        margin-right: -500px;
+        font-size: 13px;
+    }
+
+        footer p a::after {
+            content: ", "; /* Automatically adds a comma with space */
+        }
+
+        footer p a:last-of-type::after {
+            content: ""; /* Removes comma from the last link */
+        }
+
+.name-link {
+    border: none;
+    background: none;
+    box-shadow: none;
+    margin-left: -3px;
+    margin-right: -3px;
+    padding: 0px;
+    font-size: 13px;
+    display: inline-block;
+    width: initial;
+    height: none;
+    text-decoration: none;
+    border-radius: 0px;
+    box-sizing: initial;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-decoration: none;
+    background-image: none;
+    color: #51335e;
+    font-size: 13px;
+}
+
+    .name-link:hover {
+        background-color: none;
+        border: none;
+        color: #c4549d;
+    }

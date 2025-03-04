@@ -7,7 +7,7 @@
     <link href="booking.css" rel="stylesheet">
 </head>
 <body>
-	
+
     <div class="container">
         <div class="box header"></div>
 
@@ -32,7 +32,7 @@
 
 
 
-      
+
 
         <!--mainfeed/Booking Form-->
         <div class="box main">
@@ -62,7 +62,7 @@
                 <input type="hidden" name="hiddenText" id="hiddenText">
                 <br />
 
-                
+
                 <label for="date">Select Date:</label>
                 <input type="date" id="date" name="date" required>
                 <br>
@@ -70,7 +70,7 @@
                 <label for="time">Select Time:</label>
                 <input type="time" id="time" name="time" required>
                 <br>
-                
+
 
                 <button type="submit">Book Now</button>
                 <br>
@@ -88,14 +88,14 @@
         <div class="left-side-banner">
             <img src="sailormooncurt.gif" class="sailor" />
         </div>
-     
-        
+
+
 
     </div>
 
 
     <script>
-        document.getElementById("bookingForm").addEventListener("submit", function(event) {
+        document.getElementById("bookingForm").addEventListener("submit", function (event) {
             event.preventDefault();
             document.getElementById("confirmation").style.display = "block";
         });
@@ -105,5 +105,14 @@
             document.querySelector('#hiddenText').value = this.value;
         });
     </script>
+    <footer>
+        <p>
+            Created by:
+            <a href="https://www.linkedin.com/in/vivian-nguyen-180601277/" class="name-link">Vivian N</a>
+            <a href="https://www.linkedin.com/in/sotharith-sieng/" class="name-link">Sotharith S</a>
+            <a href="https://www.linkedin.com/in/kyletran722/" class="name-link">Kyle T</a> and
+            <a href="https://www.linkedin.com/in/yunjyi/" class="name-link">Yun Y</a>
+        </p>
+    </footer>
 </body>
 </html>
