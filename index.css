@@ -354,7 +354,7 @@ body {
 
 /*music header box design*/
 .music h3 {
-    border: 1px solid #AA86BA;
+    border: 0px solid pink;
     margin-top: -20px;
     margin-left: -20px;
     width: 250px;
@@ -363,6 +363,7 @@ body {
     background-image: linear-gradient(#fcedf1, #fcd4dc);
     box-shadow: 2px 2px 8px #dedede;
     position: absolute;
+    outline: 1px solid #AA86BA;
 }
 
 /*the gif in the music box*/
