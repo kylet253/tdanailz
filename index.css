@@ -227,9 +227,9 @@ a {
     width: 100px;
     height: 100px;
     align-self: center;
-    margin-left: 18px;
-    margin-top: 20px;
-    box-shadow: 2px 2px 8px #dedede;
+    margin-left: 20px;
+    margin-top: 25px;
+    box-shadow: none;
 }
 
 
