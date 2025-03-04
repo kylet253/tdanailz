@@ -13,7 +13,14 @@ body {
     background-attachment: fixed;
 }
 
-/* Main White Container */
+/* 
+    CSS CODE ORDER
+    BANNER HEADER > DIRECTORY > LEFT SIDE BANNER > FAQ > FAQ ACCORDION > FOOTER
+
+*/
+
+
+
 .container {
     width: 1100px;
     height: 875px;
@@ -31,14 +38,8 @@ body {
     border: 1px solid #ffb6c1;
     background: rgba(255, 255, 255, 0.8);
     padding: 20px;
-} 
-
-/* Header Banner */
-.header {
-    height: 205px;
-    background-image: url('Untitled_design_4.jpg');
+    margin-top: 1px;
 }
-
 /* Flexbox for Layout */
 .content-wrapper {
     display: flex;
@@ -46,7 +47,17 @@ body {
     width: fit-content;
 }
 
-/* Directory (Sidebar) */
+
+
+/* Header Banner */
+.header {
+    height: 205px;
+    background-image: url('Untitled_design_4.jpg');
+}
+
+
+
+/*directory box*/
 .directory {
     background-image: url('side_backs.jpg');
     height: 150px;
@@ -65,15 +76,66 @@ body {
     flex-direction: column;
     margin-left: 0px;
 }
+    /*Directory subheader design*/
+    .directory h3 {
+        border: 0px solid pink;
+        margin-top: -20px;
+        margin-left: -20px;
+        width: 272px;
+        height: 30px;
+        text-align: center;
+        background-image: linear-gradient(#fcedf1, #fcd4dc);
+        box-shadow: 2px 2px 8px #dedede;
+        position: absolute;
+        outline: 1px solid #AA86BA;
+    }
+/*directory header box title*/
 .directory-text {
     font-family: 'CustomFont1';
     font-size: 10px;
+    width: 150px;
     text-align: center;
-    margin-top: -37px;
+    margin-top: -10px;
+    margin-left: 42px;
     color: #744987;
-    
+    text-align: center;
+    position: absolute;
 }
+/*directory buttons movement*/
+.directory-buttons {
+    margin-top: 20px;
+}
+/* Centering Directory Buttons */
+.directory a {
+    font-family: "Lucida Console", "Lucida Sans Typewriter", monaco, "Bitstream Vera Sans Mono", monospace;
+    font-size: 13px;
+    display: inline-block;
+    width: 150px;
+    height: 30px;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid #AA86BA;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 10px;
+    margin-bottom: 6px;
+    margin-left: 40px;
+    text-decoration: none;
+    background-image: linear-gradient(#faedd9,#fae0b9 );
+    color: #51335e;
+    box-shadow: 2px 2px 8px #dedede;
+}
+/* adjust the color when hovering or clicking the buttons*/
+    .directory a:hover {
+        border: 2px solid #ffb6c1;
+        background-image: linear-gradient(#faedd9,#fcd4dc );
+        z-index: 999;
+    }
 
+
+
+/*;left side gif or picture*/
 .side-banner {
     background-image: url('side_backs.jpg');
     height: 418px;
@@ -99,31 +161,20 @@ body {
     height: 700px;
     margin-top: -33px;
 }
-/* Centering Directory Buttons */
-a {
-    font-family: "Lucida Console", "Lucida Sans Typewriter", monaco, "Bitstream Vera Sans Mono", monospace;
-    font-size: 13px;
-    display: inline-block;
-    width: 150px;
-    height: 30px;
-    padding: 5px;
-    text-align: center;
-    text-decoration: none;
-    border: 1px solid #ffb6c1;
-    border-radius: 25px;
-    box-sizing: border-box;
-    margin-top: 10px;
-    margin-bottom: 6px;
-    margin-left: 40px;
-    text-decoration: none;
-    background-image: linear-gradient(#faedd9,#fae0b9 );
-    color: #51335e;
-    box-shadow: 2px 2px 8px #dedede;
-}
 
-    a:hover {
-        border: 2px solid #ffb6c1;
-    }
+
+
+/*the gif star border above faq box*/
+#topborder {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 809px;
+    padding: 0px;
+    overflow: hidden;
+    margin-left: -18px;
+    margin-top: 3px;
+}
     /* FAQ Box */
 .faq-box {
     background-color: white;
@@ -145,7 +196,6 @@ a {
     margin-top: -622px;
     overflow: hidden;
 }
-
 /* FAQ Title */
 .faq-title {
     font-family: "Lucida Console", "Lucida Sans Typewriter", monaco, "Bitstream Vera Sans Mono", monospace;
@@ -163,7 +213,6 @@ a {
     outline-width: 1px;
     outline-color: #AA86BA;
 }
-
 
 
 
@@ -185,27 +234,22 @@ a {
     align-items: center;
     box-shadow: 2px 2px 8px #dedede;
 }
-
 /* Arrow Image */
 .dropdown-arrow {
     width: 20px;
     height: 20px;
     transition: transform 0.3s ease-in-out;
 }
-
 /* Flip arrow when active */
 .accordion.active .dropdown-arrow {
     transform: rotate(180deg);
 }
-
 .accordion:hover {
     background-color: #fcd4dc;
 }
-
 .active, .accordion:focus {
     background-color: #fcd4dc;
 }
-
 /* FAQ Panel (Dropdown) */
 .panel {
     padding: 10px;
@@ -221,29 +265,58 @@ a {
     box-shadow: 2px 2px 8px #dedede;
 }
 
-h3 {
-    border: 0px solid pink;
-    margin-top: -20px;
-    margin-left: -20px;
-    width: 272px;
-    height: 30px;
-    text-align: center;
-    background-image: linear-gradient(#fcedf1, #fcd4dc);
-    box-shadow: 2px 2px 8px #dedede;
-    outline: 1px solid #AA86BA;
-}
 
 
-/*the gif star border*/
-#topborder {
+/*footer stuff*/
+footer {
+    width: 100%; /* Full width for consistent centering */
+    text-align: center; /* Centers text horizontally */
+    position: relative; /* Use relative instead of absolute to avoid fixed positioning issues */
+    margin-top: -10px;
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 809px;
+    justify-content: center; /* Keeps content centered */
+    align-items: center; /* Vertically aligns content */
+    margin-left: 113px;
+}
+    footer p {
+        font-family: "Lucida Console", "Lucida Sans Typewriter", monaco, "Bitstream Vera Sans Mono", monospace;
+        color: #51335e;
+        margin-right: -500px;
+        font-size: 13px;
+    }
+        footer p a::after {
+            content: ", "; /* Automatically adds a comma with space */
+        }
+        footer p a:last-of-type::after {
+            content: ""; /* Removes comma from the last link */
+        }
+.name-link {
+    border: none;
+    background: none;
+    box-shadow: none;
+    margin-left: -3px;
+    margin-right: -3px;
     padding: 0px;
-    overflow: hidden;
-    margin-left: -18px;
+    font-size: 13px;
+    display: inline-block;
+    width: initial;
+    height: none;
+    text-decoration: none;
+    border-radius: 0px;
+    box-sizing: initial;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-decoration: none;
+    background-image: none;
+    color: #51335e;
+    font-size: 13px;
 }
 
+    .name-link:hover {
+        background-color: none;
+        border: none;
+        color: #c4549d;
+        background-image: none;
+    }
 
 

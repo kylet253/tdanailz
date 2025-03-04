@@ -12,6 +12,14 @@ body
     height: auto;
     background-attachment: fixed;
 }
+
+/*
+    CSS CODE ORDER
+    BANNER HEADER > DIRECTORY > LEFT SIDE BANNER > MAIN > GALLERY STUFF > FOOTER
+*/
+
+
+
 /* White Container - Now Starts from the Top & Expands Naturally */
 .container {
     width: 1100px;
@@ -26,11 +34,22 @@ body
     outline-color: #AA86BA;
     margin-top: 0px;
 }
+/*aligns the left side column boxes*/
+.left-container {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    margin-top: 0px;
+}
 .box {
     border: 1px solid #ffb6c1;
     background: rgba(255, 255, 255, 0.8);
     padding: 20px;
+    margin-top: 1px;
 }
+
+
+
 /*website banner*/
 .header {
     height: 205px;
@@ -38,11 +57,6 @@ body
     background-image: url('Untitled_design_4.jpg');
 }
    
-.left-container{
-    display: flex;
-    flex-direction: column;
-    width: fit-content;
-}
 
 
     /*directory box*/
@@ -64,20 +78,69 @@ body
     flex-direction: column;
     margin-left: 0px;
 }
-
+/*Directory subheader design*/
+    .directory h3 {
+        border: 0px solid pink;
+        margin-top: -20px;
+        margin-left: -20px;
+        width: 265px;
+        height: 30px;
+        text-align: center;
+        background-image: linear-gradient(#fcedf1, #fcd4dc);
+        box-shadow: 2px 2px 8px #dedede;
+        position: absolute;
+        outline: 1px solid #AA86BA;
+    }
 /*directory box title*/
 .directory-text {
     font-family: 'CustomFont1';
     font-size: 10px;
+    width: 150px;
     text-align: center;
-    margin-top: -40px;
+    margin-top: -12px;
+    margin-left: 40px;
     color: #744987;
-    
+    text-align: center;
+    position: absolute;
+}
+/*USE THIS TO MOVE THE DIRECTORY BUTTONS AROUND*/
+.directory-buttons{
+    margin-top: 20px;
+}
+/*directory button styling */
+.directory a {
+    font-family: "Lucida Console", "Lucida Sans Typewriter", monaco, "Bitstream Vera Sans Mono", monospace;
+    font-size: 13px;
+    display: inline-block;
+    width: 150px;
+    height: 30px;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid #AA86BA;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 10px;
+    margin-bottom: 6px;
+    margin-left: 35px;
+    text-decoration: none;
+    background-image: linear-gradient(#faedd9,#fae0b9 );
+    color: #51335e;
+    box-shadow: 2px 2px 8px #dedede;
+}
+/*adjust the color when hovering or clicking the buttons*/
+.directory a:hover {
+    border: 2px solid #ffb6c1;
+    background-image: linear-gradient(#faedd9,#fcd4dc );
+    z-index: 999;
 }
 
-.sidebanner {
+
+
+/*the left side banner box*/
+    .sidebanner {
     background-image: url('side_backs.jpg');
-    height: 653px;
+    height: 654px;
     background-color: white;
     width: 265px;
     border-width: 1px;
@@ -94,38 +157,16 @@ body
     margin-left: 0px;
     overflow:hidden;
 }
-
+/*to mess with the dimensions of the gif*/
 .long-banner{
     width:300px;
     height: 800px;
     margin-top: -70px;
 }
-/*navigation buttons*/
-a {
-    font-family: "Lucida Console", "Lucida Sans Typewriter", monaco, "Bitstream Vera Sans Mono", monospace;
-    font-size: 13px;
-    display: inline-block;
-    width: 150px;
-    height: 30px;
-    padding: 5px;
-    text-align: center;
-    text-decoration: none;
-    border: 1px solid #ffb6c1;
-    border-radius: 25px;
-    box-sizing: border-box;
-    margin-top: 10px;
-    margin-bottom: 6px;
-    margin-left: 40px;
-    text-decoration: none;
-    background-image: linear-gradient(#faedd9,#fae0b9 );
-    color: #51335e;
-    box-shadow: 2px 2px 8px #dedede;
-}
 
-    a:hover {
-        border: 2px solid #ffb6c1;
-    }
-/* designs box */
+
+
+/*the designs box*/
 .main {
     background-color: white;
     margin: 5px 5px 10px 10px;
@@ -143,55 +184,8 @@ a {
     background-image: url("gallerybg.png");
     position:relative;
     margin-left: 275px;
-    
-    margin-top: -855px;
-    
+    margin-top: -857px;
 }
-.title{
-    font-family: 'CustomFont1', sans-serif;
-    font-size: 28px;
-    color: #c4549d;
-    text-align: center;
-    background: linear-gradient(#fcedf1, #fcd4dc);
-    padding: 10px 0;
-    border-radius: 10px;
-    width: 80%;
-    max-width: 600px;
-    box-shadow: 2px 2px 8px #dedede;
-    margin: 20px auto;
-}
-
-
-/*misc box title*/
-.misc-text {
-    font-family: 'CustomFont1';
-    font-size: 10px;
-    text-align: center;
-    margin-top: -40px;
-    color: #744987;
-}
-
-
-
-.box main {
-    top: 0;
-    text-align: center;
-    
-}
-
-/*subheaders*/
-h3 {
-    border: 0px solid pink;
-    margin-top: -20px;
-    margin-left: -20px;
-    width: 265px;
-    height: 30px;
-    text-align: center;
-    background-image: linear-gradient(#fcedf1, #fcd4dc);
-    box-shadow: 2px 2px 8px #dedede;
-    outline: 1px solid #AA86BA;
-}
-
 /*the gif star border*/
 #topborder {
     display: flex;
@@ -201,32 +195,9 @@ h3 {
     padding: 0px;
     overflow: hidden;
     margin-left:-14px;
+    margin-top: 3px;
 }
-
-
-/*header text*/
-h2 {
-    font-family: "Lucida Console", "Lucida Sans Typewriter", monaco, "Bitstream Vera Sans Mono", monospace;
-    font-size: 24px;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 700;
-    line-height: 26.4px;
-    text-align: center;
-    color: #c4549d;
-}
-
-/*this is the body text and updates text*/
-p {
-    font-family: "Lucida Console", "Lucida Sans Typewriter", monaco, "Bitstream Vera Sans Mono", monospace;
-    font-size: 15px;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 400;
-    line-height: 20px;
-}
-
-/* Title */
+/* designs title */
 .title {
     font-family: "Lucida Console", "Lucida Sans Typewriter", monaco, "Bitstream Vera Sans Mono", monospace;
     font-size: 26px;
@@ -244,31 +215,7 @@ p {
     outline-color: #AA86BA;
 }
 
-/* Navigation Bar */
-.navigation {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    padding: 10px;
-}
 
-/* Navigation Buttons */
-.navigation a {
-    text-decoration: none;
-    font-family: 'CustomFont1', sans-serif;
-    color: black;
-    font-size: 16px;
-    background-color: #cad1ec;
-    padding: 10px 20px;
-    border-radius: 8px;
-    transition: 0.3s;
-}
-
-
-/* Hover effect for navigation */
-.navigation a:hover {
-    background-color: #9ba6cf;
-}
 
 /* Gallery Grid */
 .gallery {
@@ -280,7 +227,6 @@ p {
     max-width: 900px;
     background-color: transparent;
 }
-
 /* Individual Gallery Items */
 .gallery-item {
     text-align: center;
@@ -295,12 +241,10 @@ p {
     margin-left:2px;
     
 }
-
 /* Hover Effect - Image Pops Out */
 .gallery-item:hover {
     transform: scale(1.05);
 }
-
 /* Image Styling */
 .gallery-img {
     width: 100%;
@@ -313,8 +257,7 @@ p {
     outline-width: 1px;
     outline-color: #AA86BA;
 }
-
-/* Description Text */
+/* Description Text under photos*/
 .description {
     font-family: "Lucida Console", "Lucida Sans Typewriter", monaco, "Bitstream Vera Sans Mono", monospace;
     font-size: 14px;
@@ -323,7 +266,6 @@ p {
     text-align: center;
     color: #51335e;
 }
-
 /* Lightbox for Enlarged Images */
 .lightbox {
     display: none;
@@ -336,7 +278,6 @@ p {
     justify-content: center;
     align-items: center;
 }
-
 /* Lightbox Image */
 .lightbox-img {
     max-width: 90%;
@@ -344,7 +285,6 @@ p {
     border-radius: 10px;
     cursor: pointer;
 }
-
 /* Close Button for Lightbox */
 .close-btn {
     position: absolute;
@@ -353,13 +293,70 @@ p {
     font-size: 30px;
     color: white;
     cursor: pointer;
-    background: rgba(0, 0, 0, 0.6);
+    background-color: pink;
     padding: 5px 10px;
     border-radius: 5px;
     transition: 0.3s;
 }
-
 /* Close Button Hover Effect */
 .close-btn:hover {
-    background: rgba(255, 0, 0, 0.8);
+    background-color: mediumpurple;
 }
+
+
+
+/*footer stuff*/
+footer {
+    width: 100%; /* Full width for consistent centering */
+    text-align: center; /* Centers text horizontally */
+    position: relative; /* Use relative instead of absolute to avoid fixed positioning issues */
+    margin-top: -10px;
+    display: flex;
+    justify-content: center; /* Keeps content centered */
+    align-items: center; /* Vertically aligns content */
+    margin-left: 113px;
+}
+
+    footer p {
+        font-family: "Lucida Console", "Lucida Sans Typewriter", monaco, "Bitstream Vera Sans Mono", monospace;
+        color: #51335e;
+        margin-right: -500px;
+        font-size: 13px;
+    }
+
+        footer p a::after {
+            content: ", "; /* Automatically adds a comma with space */
+        }
+
+        footer p a:last-of-type::after {
+            content: ""; /* Removes comma from the last link */
+        }
+
+.name-link {
+    border: none;
+    background: none;
+    box-shadow: none;
+    margin-left: -3px;
+    margin-right: -3px;
+    padding: 0px;
+    font-size: 13px;
+    display: inline-block;
+    width: initial;
+    height: none;
+    text-decoration: none;
+    border-radius: 0px;
+    box-sizing: initial;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-decoration: none;
+    background-image: none;
+    color: #51335e;
+    font-size: 13px;
+}
+
+    .name-link:hover {
+        background-color: none;
+        border: none;
+        color: #c4549d;
+        background-image: none;
+    }

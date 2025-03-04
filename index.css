@@ -3,10 +3,19 @@
     src: url('PressStart2P-Regular.ttf') format('truetype');
 }
 body {
+    overflow-y: scroll;
     overflow-x: hidden;
 }
+
+/*
+    THE CSS CODE ORDER
+    HEADER > UPDATES > DIRECTORY > MISCELLANEOUS > MAIN > MUSIC > RANDOM > FOOTER
+
+*/
+
+
 /*the entirety of the content*/
-    .container {
+.container {
     width: 1100px;
     height: 900px;
     margin: auto;
@@ -19,23 +28,41 @@ body {
     outline-color: #AA86BA;
     margin-top: 0px;
 }
-
 .box {
     border: 1px solid #ffb6c1;
     background: rgba(255, 255, 255, 0.8);
     padding: 20px;
-    
 }
+/*aligns the two boxes on the right side of the page*/
+.right-column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Keeps everything to the right */
+    margin-right: 0px;
+    z-index: 10;
+    width: fit-content;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: -1px;
+}
+/*manages the main text and right side column stuff*/
+.content-wrapper {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+
 
 /*website banner*/
 .header {
-    
     height: 205px;
     background-image: url('Untitled_design_4.jpg');
-    
-    
-    
 }
+
+
+
 /*updates box*/
 .updates {
     height: 200px;
@@ -58,7 +85,19 @@ body {
     font-family: 'CustomFont1';
     font-size: 10px;
 }
-
+    /*updates header box design*/
+    .updates h3 {
+        border: 0px solid pink;
+        margin-top: -20px;
+        margin-left: -20px;
+        width: 250px;
+        height: 30px;
+        text-align: center;
+        background-image: linear-gradient(#fcedf1, #fcd4dc);
+        box-shadow: 2px 2px 8px #dedede;
+        position: absolute;
+        outline: 1px solid #AA86BA;
+    }
 /*updates box title*/
     .updates-text {
     font-family: 'CustomFont1';
@@ -69,10 +108,9 @@ body {
     margin-left: 28px;
     color: #744987;
     text-align: center;
-    
-    
     position: absolute;
     }
+    /*the input text inside updates*/
 .updates-input p {
     font-family: "Lucida Console", "Lucida Sans Typewriter", monaco, "Bitstream Vera Sans Mono", monospace;
     font-size: 13px;
@@ -83,9 +121,10 @@ body {
     color: #51335e;
     margin-top: 5px;
     margin-bottom: 5px;
-   
-    
 }
+
+
+
 /*directory box*/
 .directory {
     background-image: url('side_backs.jpg');
@@ -102,7 +141,19 @@ body {
     outline-color: #fce3f9;
     outline-width: 5px;
 }
-
+    /*directory header box design*/
+    .directory h3 {
+        border: 0px solid pink;
+        margin-top: -20px;
+        margin-left: -20px;
+        width: 250px;
+        height: 30px;
+        text-align: center;
+        background-image: linear-gradient(#fcedf1, #fcd4dc);
+        box-shadow: 2px 2px 8px #dedede;
+        position: absolute;
+        outline: 1px solid #AA86BA;
+    }
 /*directory box title*/
 .directory-text {
     font-family: 'CustomFont1';
@@ -115,29 +166,12 @@ body {
     text-align: center;
     position: absolute;
 }
-
-.directory-buttons {
-    font-family: "Lucida Console", "Lucida Sans Typewriter", monaco, "Bitstream Vera Sans Mono", monospace;
-    font-size: 13px;
-    display: inline-block;
-    width: 150px;
-    padding: 5px;
-    text-align: center;
-    text-decoration: none;
-    border: none;
-    border-radius: 25px;
-    box-sizing: border-box;
-    margin-top: 14px;
-    margin-bottom: 6px;
-    margin-left: -5px;
-    text-decoration: none;
-    background-image: none;
-    color: #51335e;
-    box-shadow: none;
-    
+/*adjusting the margins on buttons together*/
+.directory-buttons{
+    margin-top: 20px;
 }
-/*navigation buttons*/
-a {
+/*directory buttons styling*/
+.directory a {
     font-family: "Lucida Console", "Lucida Sans Typewriter", monaco, "Bitstream Vera Sans Mono", monospace;
     font-size: 13px;
     display: inline-block;
@@ -146,8 +180,8 @@ a {
     padding: 5px;
     text-align: center;
     text-decoration: none;
-    border: 1px solid #ffb6c1;
-    border-radius: 25px;
+    border: 1px solid #AA86BA;
+    border-radius: 5px;
     box-sizing: border-box;
     margin-top: 10px;
     margin-bottom: 6px;
@@ -157,30 +191,14 @@ a {
     color: #51335e;
     box-shadow: 2px 2px 8px #dedede;
 }
-
-
-    a:hover {
-        border: 2px solid #ffb6c1;  
-    }
-/*main box */
-.main {
-    height: 604px;
-    background-color: white;
-    background-image: url(melody_notepad.jpg);
-    width: 538px;
-    float: right;
-    margin-right: 260px;
-    margin-top: -645px;
-    border-width: 1px;
-    border-color: #AA86BA;
-    border-style: solid;
-    box-shadow: 2px 2px 8px #dedede;
-    outline-style: solid;
-    outline-color: #fce3f9;
-    outline-width: 5px;
-    position:relative;
-
+/*adjust the color when a cursor hovers/clicks it*/
+.directory a:hover {
+    border: 2px solid #ffb6c1;
+    background-image: linear-gradient(#faedd9,#fcd4dc );
+    z-index: 999;
 }
+
+
 
 /*misc box*/
 .misc {
@@ -198,7 +216,6 @@ a {
     outline-color: #fce3f9;
     outline-width: 5px;
 }
-
 /*misc box title*/
 .misc-text {
     font-family: 'CustomFont1';
@@ -211,27 +228,93 @@ a {
     text-align: center;
     position: absolute;
 }
-.misc a{
-    border: none;
-    background-image: none;
-    box-shadow: none;
-    border-width: 0px;
-    font-size: 1px;
-    background: none;
-    width: 1px;
-    
-    
+/* misc header box design*/
+.misc h3 {
+    border: 0px solid pink;
+    margin-top: -20px;
+    margin-left: -20px;
+    width: 250px;
+    height: 30px;
+    text-align: center;
+    background-image: linear-gradient(#fcedf1, #fcd4dc);
+    box-shadow: 2px 2px 8px #dedede;
+    position: absolute;
+    outline: 1px solid #AA86BA;
 }
-
+/*instagram button*/
 .instagram {
     width: 100px;
     height: 100px;
     align-self: center;
-    margin-left: 20px;
-    margin-top: 25px;
+    margin-left: 55px;
+    margin-top: 40px;
     box-shadow: none;
 }
 
+
+
+/*main box */
+.main {
+    height: 604px;
+    background-color: white;
+    background-image: url(melody_notepad.jpg);
+    width: 538px;
+    float: right;
+    margin-right: 260px;
+    margin-top: -646px;
+    border-width: 1px;
+    border-color: #AA86BA;
+    border-style: solid;
+    box-shadow: 2px 2px 8px #dedede;
+    outline-style: solid;
+    outline-color: #fce3f9;
+    outline-width: 5px;
+    position: relative;
+}
+    /*mainfeed header box design*/
+    .main h4 {
+        border: 0px solid pink;
+        margin-top: -20px;
+        margin-left: -20px;
+        width: 578px;
+        height: 30px;
+        text-align: center;
+        background-image: linear-gradient(#faf0fc, #EEBDE9);
+        box-shadow: 2px 2px 8px #dedede;
+        outline: 1px solid #AA86BA;
+    }
+/*the gif star border*/
+#topborder {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 571px;
+    margin-top: -58px;
+    margin-left: -17px;
+    padding: 10px 0;
+    overflow: hidden;
+}
+/*this is the header text in pink*/
+.main h2 {
+    font-family: "Lucida Console", "Lucida Sans Typewriter", monaco, "Bitstream Vera Sans Mono", monospace;
+    font-size: 24px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    line-height: 26.4px;
+    text-align: center;
+    color: #c4549d;
+}
+/*this is the body text*/
+.main p {
+    font-family: "Lucida Console", "Lucida Sans Typewriter", monaco, "Bitstream Vera Sans Mono", monospace;
+    font-size: 15px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 20px;
+    color: #51335e;
+}
 
 
 
@@ -265,51 +348,8 @@ a {
     position: absolute;
 }
 
-/*audio stuff*/
-audio {
-    border: 0.5px solid #ffb6c1;
-    border-radius: 30px;
-    width: 210px;
-    margin-top: 26px;
-    box-shadow: 2px 2px 8px #dedede;
-}
-    audio::-webkit-media-controls-panel {
-        background-image: linear-gradient(#faedd9,#fae0b9);
-        color: black;
-    }
-
-    audio::-webkit-media-controls-play-button {
-        background-color: #fcd4dc;
-        border-radius: 50%;
-        color: #51335e;
-    }
-
-    audio::-webkit-media-controls-play-button:hover {
-        background-color: #EEBDE9;
-    }
-
-    audio::-webkit-media-controls-time-remaining-display {
-        color: black;
-    }
-
-/*the gif in the music box*/
-.music-image {
-    margin-top: 8px;
-    margin-left: -1px;
-    width: 210px;
-    height: 210px;
-    border: 1px solid #ffb6c1;
-    outline-color: #fce3f9;
-    outline-style: solid;
-    outline-width: 5px;
-}
-
-.box main {
-    top: 0;
-}
-
-/*subheaders*/
-h3 {
+/*music header box design*/
+.music h3 {
     border: 0px solid pink;
     margin-top: -20px;
     margin-left: -20px;
@@ -322,69 +362,42 @@ h3 {
     outline: 1px solid #AA86BA;
 }
 
-/*the gif star border*/
-#topborder {
-    display: flex; 
-    justify-content: space-evenly; 
-    align-items: center; 
-    width: 571px; 
-    margin-top: -58px;
-    margin-left: -17px;
-    padding: 10px 0; 
-    overflow: hidden;
-   
-    
+/*the gif in the music box*/
+.music-image {
+    margin-top: 8px;
+    margin-left: -1px;
+    width: 210px;
+    height: 210px;
+    border: 1px solid #ffb6c1;
 }
-/*mainfeed header*/
-h4 {
-    border: 0px solid pink;
-    margin-top: -20px;
-    margin-left: -20px;
-    width: 578px;
-    height: 30px;
-    text-align: center;
-    background-image: linear-gradient(#faf0fc, #EEBDE9);
+/*audio stuff*/
+audio {
+    border: 0.5px solid #AA86BA;
+    border-radius: 5px;
+    width: 210px;
+    margin-top: 26px;
     box-shadow: 2px 2px 8px #dedede;
+    background-image: linear-gradient(#fcedf1, #fcd4dc);
 }
+    audio::-webkit-media-controls-panel {
+        background-image: linear-gradient(#fcedf1, #fcd4dc);
+        border-radius: 5px;
+    }
+    audio::-webkit-media-controls-play-button {
+        background-color: #fae0b9;
+        border-radius: 30px;
+        color: #51335e;
+        outline: 1px solid #AA86BA;
+    }
+        audio::-webkit-media-controls-play-button:hover {
+            background-color: #ffb6c1;
+            outline: 2px solid #ffb6c1;
+        }
+    audio::-webkit-media-controls-time-remaining-display {
+        color: black;
+    }
 
-/*this is the header text in pink*/
-h2 {
-    font-family: "Lucida Console", "Lucida Sans Typewriter", monaco, "Bitstream Vera Sans Mono", monospace;
-    font-size: 24px;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 700;
-    line-height: 26.4px;
-    text-align: center;
-    color: #c4549d;
-}
 
-/*this is the body text and updates text*/
-p {
-    font-family: "Lucida Console", "Lucida Sans Typewriter", monaco, "Bitstream Vera Sans Mono", monospace;
-    font-size: 15px;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 400;
-    line-height: 20px;
-    color: #51335e;
-}
-
-/*the two boxes on the right side of the page*/
-.right-column {
-    
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end; /* Keeps everything to the right */
-    margin-right: 0px;
-    z-index: 10;
-    width: fit-content;
-    position: absolute;
-    right: 0;
-    top: 0;
-   
-    
-}
 
 /*bottom right image box*/
 .random-image {
@@ -405,7 +418,6 @@ p {
     clear: both; /* Ensures it doesn't overlap with floated elements */
     position: relative;
     margin-left: auto;
-    
 }
     /*bottom right image*/
     .random-image img {
@@ -413,26 +425,9 @@ p {
         height: 100%; /* Keeps image proportions */
         margin-top: -2px;
         margin-left: -13px;
-        
         display: block; /* Helps prevent weird overflow */
-        
     }
 
-    /*manages the main text and right side column stuff*/
-    .content-wrapper{
-        position: relative;
-        width: 100%;
-        height: auto;
-
-    }
-
-.group-tag {
-    font-family: "Lucida Console", "Lucida Sans Typewriter", monaco, "Bitstream Vera Sans Mono", monospace;
-    font-size: 10px;
-    text-align: center;
-    color: #c4549d;
-    margin-top: 80px;
-}
 
 
 /*footer stuff*/
@@ -446,17 +441,15 @@ footer {
     align-items: center; /* Vertically aligns content */
     margin-left: 113px;
 }
-
     footer p {
-        
+        font-family: "Lucida Console", "Lucida Sans Typewriter", monaco, "Bitstream Vera Sans Mono", monospace;
+        color: #51335e;
         margin-right: -500px;
         font-size: 13px;
     }
-
         footer p a::after {
             content: ", "; /* Automatically adds a comma with space */
         }
-
         footer p a:last-of-type::after {
             content: ""; /* Removes comma from the last link */
         }
@@ -480,10 +473,11 @@ footer {
     background-image: none;
     color: #51335e;
     font-size: 13px;
+    
 }
-
     .name-link:hover {
         background-color: none;
         border: none;
         color: #c4549d;
+        background-image: none;
     }

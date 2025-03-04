@@ -13,6 +13,17 @@ body
     height: 700px;
     background-attachment: fixed;
 }
+
+/*
+    CSS CODE ORDER
+    BANNER HEADER > DIRECTORY > MAIN > BOOKING FORM > LEFT PICTURE > RIGHT PICTURES
+    > FOOTER
+
+*/
+
+
+
+
 /*the entirety of the content*/
 .container {
     width: 1100px;
@@ -27,11 +38,11 @@ body
     outline-style: solid;
     outline-width: 1px;
 }
-
 .box {
     border: 1px solid #ffb6c1;
     background: rgba(255, 255, 255, 0.8);
     padding: 20px;
+    margin-top: 1px;
 }
 
 /*website banner*/
@@ -40,9 +51,9 @@ body
     background-image: url('Untitled_design_4.jpg');
    
 }
-/*updates box*/
 
-    /*directory box*/
+
+/*directory box*/
 .directory {
     background-image: url('side_backs.jpg');
     height: 150px;
@@ -58,8 +69,7 @@ body
     outline-color: #fce3f9;
     outline-width: 5px;
 }
-
-/*directory box title*/
+/*directory header box title*/
 .directory-text {
     font-family: 'CustomFont1';
     font-size: 10px;
@@ -67,9 +77,8 @@ body
     margin-top: -41px;
     color: #744987;
 }
-
-/*navigation buttons*/
-a {
+/*directory button stylings*/
+.directory a {
     font-family: "Lucida Console", "Lucida Sans Typewriter", monaco, "Bitstream Vera Sans Mono", monospace;
     font-size: 13px;
     display: inline-block;
@@ -78,8 +87,8 @@ a {
     padding: 5px;
     text-align: center;
     text-decoration: none;
-    border: 1px solid #ffb6c1;
-    border-radius: 25px;
+    border: 1px solid #AA86BA;
+    border-radius: 5px;
     box-sizing: border-box;
     margin-top: 10px;
     margin-bottom: 6px;
@@ -89,10 +98,30 @@ a {
     color: #51335e;
     box-shadow: 2px 2px 8px #dedede;
 }
+/* adjust the color when hover/clicked*/
+.directory a:hover {
+    border: 2px solid #ffb6c1;
+    background-image: linear-gradient(#faedd9,#fcd4dc );
+    z-index: 999;
+}
+/*directory header box design*/
+.directory h3 {
+    border: 0px solid pink;
+    margin-top: -20px;
+    margin-left: -20px;
+    width: 250px;
+    height: 30px;
+    text-align: center;
+    background-image: linear-gradient(#fcedf1, #fcd4dc);
+    box-shadow: 2px 2px 8px #dedede;
+    outline: 1px solid #AA86BA;
+}
+/*adjust the margin spacing for the buttons altogether*/
+.directory-buttons{
+    margin-top: 17px;
+}
 
-    a:hover {
-        border: 2px solid #ffb6c1;
-    }
+
 
 /*main box */
 .main {
@@ -110,24 +139,18 @@ a {
     outline-style: solid;
     outline-color: #fce3f9;
     outline-width: 5px;
-    
 }
-
-
-
-/*subheaders*/
-h3 {
+/*mainfeed header*/
+.main h4 {
     border: 0px solid pink;
     margin-top: -20px;
     margin-left: -20px;
-    width: 250px;
+    width: 578px;
     height: 30px;
     text-align: center;
-    background-image: linear-gradient(#fcedf1, #fcd4dc);
+    background-image: linear-gradient(#faf0fc, #EEBDE9);
     box-shadow: 2px 2px 8px #dedede;
-    outline: 1px solid #AA86BA;
 }
-
 /*the gif star border*/
 #topborder {
     display: flex;
@@ -139,20 +162,8 @@ h3 {
     padding: 10px 0;
     overflow: hidden;
 }
-/*mainfeed header*/
-h4 {
-    border: 0px solid pink;
-    margin-top: -20px;
-    margin-left: -20px;
-    width: 578px;
-    height: 30px;
-    text-align: center;
-    background-image: linear-gradient(#faf0fc, #EEBDE9);
-    box-shadow: 2px 2px 8px #dedede;
-}
-
 /*this is the header text in pink*/
-h2 {
+.main h2 {
     font-family: "Lucida Console", "Lucida Sans Typewriter", monaco, "Bitstream Vera Sans Mono", monospace;
     font-size: 24px;
     font-style: normal;
@@ -162,9 +173,8 @@ h2 {
     text-align: center;
     color: #c4549d;
 }
-
-/*this is the body text and updates text*/
-p {
+/*the subtext underneath the header text*/
+.main p {
     font-family: "Lucida Console", "Lucida Sans Typewriter", monaco, "Bitstream Vera Sans Mono", monospace;
     font-size: 15px;
     font-style: normal;
@@ -175,13 +185,15 @@ p {
     color: #51335e;
 }
 
+
+
+/*most of the stuff below is the booking form things*/
 form{
     display: flex;
     flex-direction: column;
     align-items:center;
     text-align: center;
 }
-
     form label {
         text-align: center;
         display: block;
@@ -189,7 +201,6 @@ form{
         color: #51335e;
         font-family: "Lucida Console", "Lucida Sans Typewriter", monaco, "Bitstream Vera Sans Mono", monospace;
     }
-
     form input {
         font-family: "Lucida Console", "Lucida Sans Typewriter", monaco, "Bitstream Vera Sans Mono", monospace;
         display: block;
@@ -204,7 +215,6 @@ form{
         font-size: 15px;
         padding: 5px;
     }
-
 form textarea {
     width: 265px; /* Match the other input fields */
     height: 100px; /* Keep the height */
@@ -247,10 +257,9 @@ form button {
     overflow-wrap: break-word; /* Ensures text wraps inside the box */
     word-wrap: break-word; /* For older browsers */
     white-space: pre-wrap; /* Preserves line breaks and wraps text */
-    padding: 5px;
-    
+    padding: 5px; 
 }
-
+/*BOOK NOW BUTTON*/
 button {
     font-family: "Lucida Console", "Lucida Sans Typewriter", monaco, "Bitstream Vera Sans Mono", monospace;
     font-size: 16px;
@@ -262,7 +271,7 @@ button {
     border: 1px solid #AA86BA;
     margin-top: -10px;
 }
-    /*button hover color*/
+/*button hover color*/
     button:hover {
         outline: 2px solid #ffb6c1; /* Neon pink Y2K style */
         background-color: white; /* Light pink background when selected */
@@ -278,6 +287,9 @@ textarea:focus {
     background-color: white; /* Light pink background when selected */
 }
 
+
+
+/*left side picture or gif*/
 .left-side-banner {
     background-color: white;
     height: 442px;
@@ -293,11 +305,14 @@ textarea:focus {
     outline-color: #fce3f9;
     outline-width: 5px;
 }
-
 .sailor{
     height: 442px;
     width: 250px;
 }
+
+
+
+/*right side picture or gif*/
 .right-side-banner {
     
     background-color: white;
@@ -314,7 +329,6 @@ textarea:focus {
     float: right;
     margin-left: 300px;
 }
-
 .seal {
     margin-left: 4px;
     margin-top: 4px;
@@ -324,14 +338,13 @@ textarea:focus {
     outline-color: #fce3f9;
     outline-width: 4px;
 }
-
-
 .pinkgirl {
     width: 250px;
     height: 417px;
     overflow: hidden;
     margin-top: -3px;
 }
+
 
 
 /*footer stuff*/
@@ -347,6 +360,8 @@ footer {
 }
 
     footer p {
+        font-family: "Lucida Console", "Lucida Sans Typewriter", monaco, "Bitstream Vera Sans Mono", monospace;
+        color: #51335e;
         margin-right: -500px;
         font-size: 13px;
     }
@@ -385,4 +400,5 @@ footer {
         background-color: none;
         border: none;
         color: #c4549d;
+        background-image: none;
     }
