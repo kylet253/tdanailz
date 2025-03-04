@@ -282,7 +282,7 @@ footer {
     display: flex;
     justify-content: center; /* Keeps content centered */
     align-items: center; /* Vertically aligns content */
-    margin-left: 1px;
+    margin-left: 100px;
 }
     footer p {
         font-family: "Lucida Console", "Lucida Sans Typewriter", monaco, "Bitstream Vera Sans Mono", monospace;
