@@ -26,12 +26,12 @@ body {
     outline-width: 1px;
     outline-style: solid;
     outline-color: #AA86BA;
-    margin-top: 1px;
 }
 .box {
     border: 1px solid #ffb6c1;
     background: rgba(255, 255, 255, 0.8);
     padding: 20px;
+    margin-top: 1px;
 }
 /*aligns the two boxes on the right side of the page*/
 .right-column {
