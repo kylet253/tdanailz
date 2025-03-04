@@ -51,6 +51,11 @@ body
     background-image: url('Untitled_design_4.jpg');
    
 }
+.subheader-gifs {
+    width: 25px;
+    height: 25px;
+    display: inline;
+}
 
 
 /*directory box*/
@@ -73,9 +78,13 @@ body
 .directory-text {
     font-family: 'CustomFont1';
     font-size: 10px;
+    width: 200px;
     text-align: center;
-    margin-top: -41px;
+    margin-top: -49px;
+    margin-left: 5px;
     color: #744987;
+    text-align: center;
+    position: absolute;
 }
 /*directory button stylings*/
 .directory a {
@@ -118,7 +127,7 @@ body
 }
 /*adjust the margin spacing for the buttons altogether*/
 .directory-buttons{
-    margin-top: 17px;
+    margin-top: -10px;
 }
 
 

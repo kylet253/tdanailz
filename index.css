@@ -61,6 +61,11 @@ body {
     background-image: url('Untitled_design_4.jpg');
 }
 
+.subheader-gifs{
+    width: 25px;
+    height: 25px;
+    display: inline;
+}
 
 
 /*updates box*/
@@ -99,17 +104,17 @@ body {
         outline: 1px solid #AA86BA;
     }
 /*updates box title*/
-    .updates-text {
+.updates-text {
     font-family: 'CustomFont1';
     font-size: 10px;
-    width: 150px;
+    width: 200px;
     text-align: center;
-    margin-top: -12px;
-    margin-left: 28px;
+    margin-top: -20px;
+    margin-left: 5px;
     color: #744987;
     text-align: center;
     position: absolute;
-    }
+}
     /*the input text inside updates*/
 .updates-input p {
     font-family: "Lucida Console", "Lucida Sans Typewriter", monaco, "Bitstream Vera Sans Mono", monospace;
@@ -162,10 +167,10 @@ body {
 .directory-text {
     font-family: 'CustomFont1';
     font-size: 10px;
-    width: 150px;
+    width: 200px;
     text-align: center;
-    margin-top: -12px;
-    margin-left: 28px;
+    margin-top: -20px;
+    margin-left: 5px;
     color: #744987;
     text-align: center;
     position: absolute;
@@ -224,10 +229,10 @@ body {
 .misc-text {
     font-family: 'CustomFont1';
     font-size: 10px;
-    width: 180px;
+    width: 200px;
     text-align: center;
-    margin-top: -12px;
-    margin-left: 20px;
+    margin-top: -20px;
+    margin-left: 5px;
     color: #744987;
     text-align: center;
     position: absolute;
@@ -343,10 +348,10 @@ body {
 .music-text {
     font-family: 'CustomFont1';
     font-size: 10px;
-    width: 120px;
+    width: 200px;
     text-align: center;
-    margin-top: -12px;
-    margin-left: 45px;
+    margin-top: -20px;
+    margin-left: 5px;
     color: #744987;
     text-align: center;
     position: absolute;
