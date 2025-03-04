@@ -54,6 +54,8 @@ body {
     height: 205px;
     background-image: url('Untitled_design_4.jpg');
 }
+
+/*adjust the subheader gif dimensions*/
 .subheader-gifs {
     width: 25px;
     height: 25px;
@@ -126,7 +128,7 @@ body {
     margin-bottom: 6px;
     margin-left: 40px;
     text-decoration: none;
-    background-image: linear-gradient(#faedd9,#fae0b9 );
+    background-image: linear-gradient(#faedd9,#fcd4dc );
     color: #51335e;
     box-shadow: 2px 2px 8px #dedede;
 }
