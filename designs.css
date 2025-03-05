@@ -53,7 +53,6 @@ body
 /*website banner*/
 .header {
     height: 205px;
-   
     background-image: url('Untitled_design_4.jpg');
 }
 
@@ -86,18 +85,18 @@ body
     margin-left: 0px;
 }
 /*Directory subheader design*/
-    .directory h3 {
-        border: 0px solid pink;
-        margin-top: -20px;
-        margin-left: -20px;
-        width: 265px;
-        height: 30px;
-        text-align: center;
-        background-image: linear-gradient(#fcedf1, #fcd4dc);
-        box-shadow: 2px 2px 8px #dedede;
-        position: absolute;
-        outline: 1px solid #AA86BA;
-    }
+.directory h3 {
+    border: 0px solid pink;
+    margin-top: -20px;
+    margin-left: -20px;
+    width: 265px;
+    height: 30px;
+    text-align: center;
+    background-image: linear-gradient(#fcedf1, #fcd4dc);
+    box-shadow: 2px 2px 8px #dedede;
+    position: absolute;
+    outline: 1px solid #AA86BA;
+}
 /*directory box title*/
 .directory-text {
     font-family: 'CustomFont1';
@@ -194,15 +193,15 @@ body
     margin-top: -857px;
 }
     /*main header box design*/
-    .main h3 {
-        width: 823px;
-        height: 30px;
-        background-image: linear-gradient(#faf0fc, #EEBDE9);
-        outline: 1px solid #AA86BA;
-        margin-top: 0px;
-        margin-left: -20px;
-        box-shadow: 2px 2px 8px #dedede;
-    }
+.main h3 {
+    width: 823px;
+    height: 30px;
+    background-image: linear-gradient(#faf0fc, #EEBDE9);
+    outline: 1px solid #AA86BA;
+    margin-top: 0px;
+    margin-left: -20px;
+    box-shadow: 2px 2px 8px #dedede;
+}
 /*the gif star border*/
 #topborder {
     display: flex;
@@ -325,20 +324,19 @@ footer {
     margin-left: 100px;
 }
 
-    footer p {
-        font-family: "Lucida Console", "Lucida Sans Typewriter", monaco, "Bitstream Vera Sans Mono", monospace;
-        color: #51335e;
-        margin-right: -500px;
-        font-size: 13px;
-    }
+footer p {
+    font-family: "Lucida Console", "Lucida Sans Typewriter", monaco, "Bitstream Vera Sans Mono", monospace;
+    color: #51335e;
+    margin-right: -500px;
+    font-size: 13px;
+}
 
-        footer p a::after {
-            content: ", "; /* Automatically adds a comma with space */
-        }
-
-        footer p a:last-of-type::after {
-            content: ""; /* Removes comma from the last link */
-        }
+footer p a::after {
+    content: ", "; /* Automatically adds a comma with space */
+}
+footer p a:last-of-type::after {
+    content: ""; /* Removes comma from the last link */
+}
 
 .name-link {
     border: none;
@@ -362,9 +360,9 @@ footer {
     font-size: 13px;
 }
 
-    .name-link:hover {
-        background-color: none;
-        border: none;
-        color: #c4549d;
-        background-image: none;
-    }
+.name-link:hover {
+    background-color: none;
+    border: none;
+    color: #c4549d;
+    background-image: none;
+}
