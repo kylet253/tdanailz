@@ -3,7 +3,7 @@
     src: url('PressStart2P-Regular.ttf') format('truetype');
 }
 body {
-    overflow-y: hidden;
+    overflow-y: scroll;
     overflow-x: hidden;
 }
 
