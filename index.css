@@ -95,18 +95,18 @@ body {
     font-size: 10px;
 }
     /*updates header box design*/
-    .updates h3 {
-        border: 0px solid pink;
-        margin-top: -20px;
-        margin-left: -20px;
-        width: 250px;
-        height: 30px;
-        text-align: center;
-        background-image: linear-gradient(#fcedf1, #fcd4dc);
-        box-shadow: 2px 2px 8px #dedede;
-        position: absolute;
-        outline: 1px solid #AA86BA;
-    }
+.updates h3 {
+    border: 0px solid pink;
+    margin-top: -20px;
+    margin-left: -20px;
+    width: 250px;
+    height: 30px;
+    text-align: center;
+    background-image: linear-gradient(#fcedf1, #fcd4dc);
+    box-shadow: 2px 2px 8px #dedede;
+    position: absolute;
+    outline: 1px solid #AA86BA;
+}
 /*updates box title*/
 .updates-text {
     font-family: 'CustomFont1';
@@ -155,18 +155,18 @@ body {
     outline-width: 5px;
 }
     /*directory header box design*/
-    .directory h3 {
-        border: 0px solid pink;
-        margin-top: -20px;
-        margin-left: -20px;
-        width: 250px;
-        height: 30px;
-        text-align: center;
-        background-image: linear-gradient(#fcedf1, #fcd4dc);
-        box-shadow: 2px 2px 8px #dedede;
-        position: absolute;
-        outline: 1px solid #AA86BA;
-    }
+.directory h3 {
+    border: 0px solid pink;
+    margin-top: -20px;
+    margin-left: -20px;
+    width: 250px;
+    height: 30px;
+    text-align: center;
+    background-image: linear-gradient(#fcedf1, #fcd4dc);
+    box-shadow: 2px 2px 8px #dedede;
+    position: absolute;
+    outline: 1px solid #AA86BA;
+}
 /*directory box title*/
 .directory-text {
     font-family: 'CustomFont1';
@@ -286,16 +286,16 @@ body {
     position: relative;
 }
     /*mainfeed header box design*/
-    .main h4 {
-        border: 0px solid pink;
-        margin-top: -20px;
-        margin-left: -20px;
-        width: 578px;
-        height: 30px;
-        text-align: center;
-        background-image: linear-gradient(#faf0fc, #EEBDE9);
-        box-shadow: 2px 2px 8px #dedede;
-        outline: 1px solid #AA86BA;
+.main h4 {
+    border: 0px solid pink;
+    margin-top: -20px;
+    margin-left: -20px;
+    width: 578px;
+    height: 30px;
+    text-align: center;
+    background-image: linear-gradient(#faf0fc, #EEBDE9);
+    box-shadow: 2px 2px 8px #dedede;
+    outline: 1px solid #AA86BA;
     }
 /*the gif star border*/
 #topborder {
@@ -394,23 +394,23 @@ audio {
     box-shadow: 2px 2px 8px #dedede;
     background-image: linear-gradient(#fcedf1, #fcd4dc);
 }
-    audio::-webkit-media-controls-panel {
-        background-image: linear-gradient(#fcedf1, #fcd4dc);
-        border-radius: 5px;
-    }
-    audio::-webkit-media-controls-play-button {
-        background-color: #fae0b9;
-        border-radius: 30px;
-        color: #51335e;
-        outline: 1px solid #AA86BA;
-    }
-        audio::-webkit-media-controls-play-button:hover {
-            background-color: #ffb6c1;
-            outline: 2px solid #ffb6c1;
-        }
-    audio::-webkit-media-controls-time-remaining-display {
-        color: black;
-    }
+audio::-webkit-media-controls-panel {
+    background-image: linear-gradient(#fcedf1, #fcd4dc);
+    border-radius: 5px;
+}
+audio::-webkit-media-controls-play-button {
+    background-color: #fae0b9;
+    border-radius: 30px;
+    color: #51335e;
+    outline: 1px solid #AA86BA;
+}
+audio::-webkit-media-controls-play-button:hover {
+    background-color: #ffb6c1;
+    outline: 2px solid #ffb6c1;
+}
+audio::-webkit-media-controls-time-remaining-display {
+    color: black;
+}
 
 
 
@@ -435,13 +435,13 @@ audio {
     margin-left: auto;
 }
     /*bottom right image*/
-    .random-image img {
-        max-width: 235px;
-        height: 100%; /* Keeps image proportions */
-        margin-top: -2px;
-        margin-left: -13px;
-        display: block; /* Helps prevent weird overflow */
-    }
+.random-image img {
+    max-width: 235px;
+    height: 100%; /* Keeps image proportions */
+    margin-top: -2px;
+    margin-left: -13px;
+    display: block; /* Helps prevent weird overflow */
+}
 
 
 
@@ -456,18 +456,18 @@ footer {
     align-items: center; /* Vertically aligns content */
     margin-left: 100px;
 }
-    footer p {
-        font-family: "Lucida Console", "Lucida Sans Typewriter", monaco, "Bitstream Vera Sans Mono", monospace;
-        color: #51335e;
-        margin-right: -500px;
-        font-size: 13px;
-    }
-        footer p a::after {
-            content: ", "; /* Automatically adds a comma with space */
-        }
-        footer p a:last-of-type::after {
-            content: ""; /* Removes comma from the last link */
-        }
+footer p {
+    font-family: "Lucida Console", "Lucida Sans Typewriter", monaco, "Bitstream Vera Sans Mono", monospace;
+    color: #51335e;
+    margin-right: -500px;
+    font-size: 13px;
+}
+footer p a::after {
+    content: ", "; /* Automatically adds a comma with space */
+}
+footer p a:last-of-type::after {
+    content: ""; /* Removes comma from the last link */
+}
 .name-link {
     border: none;
     background: none;
@@ -490,9 +490,9 @@ footer {
     font-size: 13px;
     
 }
-    .name-link:hover {
-        background-color: none;
-        border: none;
-        color: #c4549d;
-        background-image: none;
-    }
+.name-link:hover {
+    background-color: none;
+    border: none;
+    color: #c4549d;
+    background-image: none;
+}
