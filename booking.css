@@ -151,16 +151,17 @@ body
     outline-width: 5px;
 }
 /*mainfeed header*/
-.main h4 {
-    border: 0px solid pink;
-    margin-top: -20px;
-    margin-left: -20px;
-    width: 578px;
-    height: 30px;
-    text-align: center;
-    background-image: linear-gradient(#faf0fc, #EEBDE9);
-    box-shadow: 2px 2px 8px #dedede;
-}
+    .main h4 {
+        border: 0px solid pink;
+        margin-top: -20px;
+        margin-left: -20px;
+        width: 578px;
+        height: 30px;
+        text-align: center;
+        background-image: linear-gradient(#faf0fc, #EEBDE9);
+        box-shadow: 2px 2px 8px #dedede;
+        outline: 1px solid #AA86BA;
+    }
 /*the gif star border*/
 #topborder {
     display: flex;

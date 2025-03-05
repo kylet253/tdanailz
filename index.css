@@ -46,6 +46,9 @@ body {
     top: 0;
     margin-top: -1px;
 }
+.left-column{
+
+}
 /*manages the main text and right side column stuff*/
 .content-wrapper {
     position: relative;
@@ -371,6 +374,7 @@ body {
     box-shadow: 2px 2px 8px #dedede;
     position: absolute;
     outline: 1px solid #AA86BA;
+
 }
 
 /*the gif in the music box*/
