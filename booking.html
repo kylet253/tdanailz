@@ -14,29 +14,34 @@
 
 
 
+        <div class="left-column">
+            <!--navigation-->
+            <div class="box directory">
+                <h3></h3>
+                <p class="directory-text">
+                    <img src="left-wing.gif" class="subheader-gifs" /> Directory <img src="right-wing.gif" class="subheader-gifs" />
+                </p>
 
-        <!--navigation-->
-        <div class="box directory">
-            <h3></h3>
-            <p class="directory-text">
-                <img src="left-wing.gif" class="subheader-gifs" /> Directory <img src="right-wing.gif" class="subheader-gifs" />
-            </p>
+                <div class="directory-buttons">
+                    <a href="index.html" class="index-link">Home</a>
+                    <br />
 
-            <div class="directory-buttons">
-                <a href="index.html" class="index-link">Home</a>
-                <br />
+                    <a href="designs.html" class="designs-link">Designs</a>
+                    <br />
 
-                <a href="designs.html" class="designs-link">Designs</a>
-                <br />
-
-                <a href="faq.html" class="faq-link">FAQ</a>
+                    <a href="faq.html" class="faq-link">FAQ</a>
+                </div>
             </div>
+
+            <div class="left-side-banner">
+                <img src="sailormooncurt.gif" class="sailor" />
+            </div>
+
         </div>
 
 
 
-
-
+        <div class="right-side-stuff">
         <!--mainfeed/Booking Form-->
         <div class="box main">
             <h4></h4>
@@ -87,35 +92,32 @@
             <img src="rollingseal.gif" class="seal" />
             <img src="blinkinggirlpink.gif" class="pinkgirl" />
 
+
+
         </div>
-        <div class="left-side-banner">
-            <img src="sailormooncurt.gif" class="sailor" />
+
+
+        <script>
+            document.getElementById("bookingForm").addEventListener("submit", function (event) {
+                event.preventDefault();
+                document.getElementById("confirmation").style.display = "block";
+            });
+        </script>
+        <script>
+            document.querySelector('.textarea').addEventListener('input', function () {
+                document.querySelector('#hiddenText').value = this.value;
+            });
+        </script>
         </div>
-
-
-
+        <footer>
+            <p>
+                Created by:
+                <a href="https://www.linkedin.com/in/vivian-nguyen-180601277/" target="_blank" class="name-link">Vivian N</a>
+                <a href="https://www.linkedin.com/in/sotharith-sieng/" target="_blank" class="name-link">Sotharith S</a>
+                <a href="https://www.linkedin.com/in/kyletran722/" target="_blank" class="name-link">Kyle T</a> and
+                <a href="https://www.linkedin.com/in/yunjyi/" target="_blank" class="name-link">Yun Y</a>
+            </p>
+        </footer>
     </div>
-
-
-    <script>
-        document.getElementById("bookingForm").addEventListener("submit", function (event) {
-            event.preventDefault();
-            document.getElementById("confirmation").style.display = "block";
-        });
-    </script>
-    <script>
-        document.querySelector('.textarea').addEventListener('input', function () {
-            document.querySelector('#hiddenText').value = this.value;
-        });
-    </script>
-    <footer>
-        <p>
-            Created by:
-            <a href="https://www.linkedin.com/in/vivian-nguyen-180601277/" target="_blank" class="name-link">Vivian N</a>
-            <a href="https://www.linkedin.com/in/sotharith-sieng/" target="_blank" class="name-link">Sotharith S</a>
-            <a href="https://www.linkedin.com/in/kyletran722/" target="_blank" class="name-link">Kyle T</a> and
-            <a href="https://www.linkedin.com/in/yunjyi/" target="_blank" class="name-link">Yun Y</a>
-        </p>
-    </footer>
 </body>
 </html>

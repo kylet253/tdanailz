@@ -46,6 +46,10 @@ body {
     flex-direction: column;
     width: fit-content;
 }
+.left-column {
+    width: fit-content;
+    position: absolute;
+}
 
 
 
@@ -62,7 +66,6 @@ body {
     display: inline;
 }
 
-
 /*directory box*/
 .directory {
     background-image: url('side_backs.jpg');
@@ -78,22 +81,6 @@ body {
     outline-style: solid;
     outline-color: #fce3f9;
     outline-width: 5px;
-    display: flex;
-    flex-direction: column;
-    margin-left: 0px;
-}
-/*Directory subheader design*/
-.directory h3 {
-    border: 0px solid pink;
-    margin-top: -20px;
-    margin-left: -20px;
-    width: 250px;
-    height: 30px;
-    text-align: center;
-    background-image: linear-gradient(#fcedf1, #fcd4dc);
-    box-shadow: 2px 2px 8px #dedede;
-    position: absolute;
-    outline: 1px solid #AA86BA;
 }
 /*directory header box title*/
 .directory-text {
@@ -101,17 +88,13 @@ body {
     font-size: 10px;
     width: 200px;
     text-align: center;
-    margin-top: -20px;
+    margin-top: -49px;
     margin-left: 5px;
     color: #744987;
     text-align: center;
     position: absolute;
 }
-/*directory buttons movement*/
-.directory-buttons {
-    margin-top: 20px;
-}
-/* Centering Directory Buttons */
+/*directory button stylings*/
 .directory a {
     font-family: "Lucida Console", "Lucida Sans Typewriter", monaco, "Bitstream Vera Sans Mono", monospace;
     font-size: 13px;
@@ -132,13 +115,28 @@ body {
     color: #51335e;
     box-shadow: 2px 2px 8px #dedede;
 }
-/* adjust the color when hovering or clicking the buttons*/
-.directory a:hover {
-    border: 2px solid #ffb6c1;
-    background-image: linear-gradient(#faedd9,#fcd4dc );
-    z-index: 999;
+    /* adjust the color when hover/clicked*/
+    .directory a:hover {
+        border: 2px solid #ffb6c1;
+        background-image: linear-gradient(#faedd9,#fcd4dc );
+        z-index: 999;
+    }
+/*directory header box design*/
+.directory h3 {
+    border: 0px solid pink;
+    margin-top: -20px;
+    margin-left: -20px;
+    width: 250px;
+    height: 30px;
+    text-align: center;
+    background-image: linear-gradient(#fcedf1, #fcd4dc);
+    box-shadow: 2px 2px 8px #dedede;
+    outline: 1px solid #AA86BA;
 }
-
+/*adjust the margin spacing for the buttons altogether*/
+.directory-buttons {
+    margin-top: -10px;
+}
 
 
 /*;left side gif or picture*/
@@ -210,7 +208,7 @@ body {
     background-image: url("gallerybg.png");
     position: relative;
     margin-left: 260px;
-    margin-top: -622px;
+    margin-top: 5px;
     overflow: hidden;
 }
 /* FAQ Title */

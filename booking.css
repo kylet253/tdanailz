@@ -44,6 +44,17 @@ body
     padding: 20px;
     margin-top: 1px;
 }
+.left-column {
+    width: fit-content;
+    position: absolute;
+}
+
+.right-side-stuff {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-top: 197px;
+}
 
 /*website banner*/
 .header {
