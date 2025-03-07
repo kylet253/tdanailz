@@ -137,7 +137,7 @@ body
 .main {
     height: 604px;
     background-color: white;
-    background-image: url(melody_notepad.jpg);
+    background-image: url(main_background.png);
     width: 538px;
     float: right;
     margin-right: 260px;
@@ -341,13 +341,8 @@ textarea:focus {
     margin-left: 300px;
 }
 .seal {
-    margin-left: 4px;
-    margin-top: 4px;
-    border: 1px solid #AA86BA;
     overflow: hidden;
-    outline-style: solid;
-    outline-color: #fce3f9;
-    outline-width: 4px;
+    width: 250px;
 }
 .pinkgirl {
     width: 250px;

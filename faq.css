@@ -68,7 +68,7 @@ body {
     background-image: url('side_backs.jpg');
     height: 150px;
     background-color: white;
-    width: 232px;
+    width: 210px;
     border-width: 1px;
     border-color: #AA86BA;
     border-style: solid;
@@ -87,7 +87,7 @@ body {
     border: 0px solid pink;
     margin-top: -20px;
     margin-left: -20px;
-    width: 272px;
+    width: 250px;
     height: 30px;
     text-align: center;
     background-image: linear-gradient(#fcedf1, #fcd4dc);
@@ -102,7 +102,7 @@ body {
     width: 200px;
     text-align: center;
     margin-top: -20px;
-    margin-left: 15px;
+    margin-left: 5px;
     color: #744987;
     text-align: center;
     position: absolute;
@@ -126,7 +126,7 @@ body {
     box-sizing: border-box;
     margin-top: 10px;
     margin-bottom: 6px;
-    margin-left: 40px;
+    margin-left: 30px;
     text-decoration: none;
     background-image: linear-gradient(#faedd9,#fcd4dc );
     color: #51335e;
@@ -146,7 +146,7 @@ body {
     background-image: url('side_backs.jpg');
     height: 418px;
     background-color: white;
-    width: 272px;
+    width: 250px;
     border-width: 1px;
     border-color: #AA86BA;
     border-style: solid;
@@ -175,16 +175,16 @@ body {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    width: 809px;
+    width: 831px;
     padding: 0px;
     overflow: hidden;
-    margin-left: -18px;
-    margin-top: -45px;
-}
+    margin-left: -17px;
+    margin-top: -46px;
 
+}
 /*faq header box design*/
 .faq-box h3 {
-    width: 823px;
+    width: 838px;
     height: 30px;
     background-image: linear-gradient(#faf0fc, #EEBDE9);
     outline: 1px solid #AA86BA;
@@ -203,13 +203,13 @@ body {
     outline-style: solid;
     outline-color: #fce3f9;
     outline-width: 5px;
-    width: 774px;
+    width: 798px;
     height: 600px;
     display: flex;
     flex-direction: column;
     background-image: url("gallerybg.png");
     position: relative;
-    margin-left: 284px;
+    margin-left: 260px;
     margin-top: -622px;
     overflow: hidden;
 }
@@ -233,15 +233,16 @@ body {
     cursor: pointer;
     padding: 10px;
     width: 100%;
-    border: 1px solid #633e73;
+    border: 1px solid #AA86BA;
     text-align: left;
     font-size: 20px;
     transition: 0.4s;
-    border-radius: 5px;
     display: flex;
     justify-content: space-between; /* Aligns text and arrow */
     align-items: center;
     box-shadow: 2px 2px 8px #dedede;
+
+  
 }
 /* Arrow Image */
 .dropdown-arrow {
@@ -265,13 +266,13 @@ body {
     display: none;
     background-color: white;
     border: 1px solid #fcd4dc;
-    border-radius: 5px;
     margin-top: -3px;
     font-family: "Lucida Console", "Lucida Sans Typewriter", monaco, "Bitstream Vera Sans Mono", monospace;
     color: #633e73;
     font-size: 15px;
     outline: 1px solid #AA86BA;
     box-shadow: 2px 2px 8px #dedede;
+    z-index: 999;
 }
 
 

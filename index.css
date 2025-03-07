@@ -138,6 +138,7 @@ body {
 }
 
 
+
 /*directory box*/
 .directory {
     background-image: url('side_backs.jpg');
@@ -262,8 +263,14 @@ body {
     margin-left: 55px;
     margin-top: 40px;
     box-shadow: none;
-
+    border-radius: 25px;
+    outline: 1px solid #AA86BA;
+    box-shadow: 2px 2px 8px #dedede;
 }
+
+    .instagram:hover {
+        outline: 2px solid#ffb6c1;
+    }
 
 
 
@@ -271,7 +278,7 @@ body {
 .main {
     height: 604px;
     background-color: white;
-    background-image: url(melody_notepad.jpg);
+    background-image: url(main_background.png);
     width: 538px;
     float: right;
     margin-right: 260px;
@@ -392,21 +399,21 @@ audio {
     width: 210px;
     margin-top: 26px;
     box-shadow: 2px 2px 8px #dedede;
-    background-image: linear-gradient(#fcedf1, #fcd4dc);
+    background-image: linear-gradient(#faedd9,#fcd4dc );
 }
 audio::-webkit-media-controls-panel {
-    background-image: linear-gradient(#fcedf1, #fcd4dc);
+    background-image: linear-gradient(#faedd9,#fcd4dc );
     border-radius: 5px;
 }
 audio::-webkit-media-controls-play-button {
-    background-color: #fae0b9;
+    background-color: #EEBDE9;
     border-radius: 30px;
     color: #51335e;
     outline: 1px solid #AA86BA;
 }
 audio::-webkit-media-controls-play-button:hover {
     background-color: #ffb6c1;
-    outline: 2px solid #ffb6c1;
+    outline: 1px solid #ffb6c1;
 }
 audio::-webkit-media-controls-time-remaining-display {
     color: black;
