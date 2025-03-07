@@ -82,19 +82,19 @@ body {
     flex-direction: column;
     margin-left: 0px;
 }
-    /*Directory subheader design*/
-    .directory h3 {
-        border: 0px solid pink;
-        margin-top: -20px;
-        margin-left: -20px;
-        width: 272px;
-        height: 30px;
-        text-align: center;
-        background-image: linear-gradient(#fcedf1, #fcd4dc);
-        box-shadow: 2px 2px 8px #dedede;
-        position: absolute;
-        outline: 1px solid #AA86BA;
-    }
+/*Directory subheader design*/
+.directory h3 {
+    border: 0px solid pink;
+    margin-top: -20px;
+    margin-left: -20px;
+    width: 272px;
+    height: 30px;
+    text-align: center;
+    background-image: linear-gradient(#fcedf1, #fcd4dc);
+    box-shadow: 2px 2px 8px #dedede;
+    position: absolute;
+    outline: 1px solid #AA86BA;
+}
 /*directory header box title*/
 .directory-text {
     font-family: 'CustomFont1';
@@ -133,11 +133,11 @@ body {
     box-shadow: 2px 2px 8px #dedede;
 }
 /* adjust the color when hovering or clicking the buttons*/
-    .directory a:hover {
-        border: 2px solid #ffb6c1;
-        background-image: linear-gradient(#faedd9,#fcd4dc );
-        z-index: 999;
-    }
+.directory a:hover {
+    border: 2px solid #ffb6c1;
+    background-image: linear-gradient(#faedd9,#fcd4dc );
+    z-index: 999;
+}
 
 
 
@@ -287,18 +287,18 @@ footer {
     align-items: center; /* Vertically aligns content */
     margin-left: 100px;
 }
-    footer p {
-        font-family: "Lucida Console", "Lucida Sans Typewriter", monaco, "Bitstream Vera Sans Mono", monospace;
-        color: #51335e;
-        margin-right: -500px;
-        font-size: 13px;
-    }
-        footer p a::after {
-            content: ", "; /* Automatically adds a comma with space */
-        }
-        footer p a:last-of-type::after {
-            content: ""; /* Removes comma from the last link */
-        }
+footer p {
+    font-family: "Lucida Console", "Lucida Sans Typewriter", monaco, "Bitstream Vera Sans Mono", monospace;
+    color: #51335e;
+    margin-right: -500px;
+    font-size: 13px;
+}
+footer p a::after {
+    content: ", "; /* Automatically adds a comma with space */
+}
+footer p a:last-of-type::after {
+    content: ""; /* Removes comma from the last link */
+}
 .name-link {
     border: none;
     background: none;
@@ -321,11 +321,11 @@ footer {
     font-size: 13px;
 }
 
-    .name-link:hover {
-        background-color: none;
-        border: none;
-        color: #c4549d;
-        background-image: none;
-    }
+.name-link:hover {
+    background-color: none;
+    border: none;
+    color: #c4549d;
+    background-image: none;
+}
 
 
