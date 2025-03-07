@@ -151,17 +151,17 @@ body
     outline-width: 5px;
 }
 /*mainfeed header*/
-    .main h4 {
-        border: 0px solid pink;
-        margin-top: -20px;
-        margin-left: -20px;
-        width: 578px;
-        height: 30px;
-        text-align: center;
-        background-image: linear-gradient(#faf0fc, #EEBDE9);
-        box-shadow: 2px 2px 8px #dedede;
-        outline: 1px solid #AA86BA;
-    }
+.main h4 {
+    border: 0px solid pink;
+    margin-top: -20px;
+    margin-left: -20px;
+    width: 578px;
+    height: 30px;
+    text-align: center;
+    background-image: linear-gradient(#faf0fc, #EEBDE9);
+    box-shadow: 2px 2px 8px #dedede;
+    outline: 1px solid #AA86BA;
+}
 /*the gif star border*/
 #topborder {
     display: flex;
@@ -205,27 +205,27 @@ form{
     align-items:center;
     text-align: center;
 }
-    form label {
-        text-align: center;
-        display: block;
-        margin-bottom: 3px; /* Space below labels */
-        color: #51335e;
-        font-family: "Lucida Console", "Lucida Sans Typewriter", monaco, "Bitstream Vera Sans Mono", monospace;
-    }
-    form input {
-        font-family: "Lucida Console", "Lucida Sans Typewriter", monaco, "Bitstream Vera Sans Mono", monospace;
-        display: block;
-        margin-bottom: 3px; /* Space below inputs */
-        border-color: #AA86BA;
-        border-width: 1px;
-        border-style: solid;
-        width: 250px;
-        height: 20px;
-        border-radius: 5px;
-        color: black;
-        font-size: 15px;
-        padding: 5px;
-    }
+form label {
+    text-align: center;
+    display: block;
+    margin-bottom: 3px; /* Space below labels */
+    color: #51335e;
+    font-family: "Lucida Console", "Lucida Sans Typewriter", monaco, "Bitstream Vera Sans Mono", monospace;
+}
+form input {
+    font-family: "Lucida Console", "Lucida Sans Typewriter", monaco, "Bitstream Vera Sans Mono", monospace;
+    display: block;
+    margin-bottom: 3px; /* Space below inputs */
+    border-color: #AA86BA;
+    border-width: 1px;
+    border-style: solid;
+    width: 250px;
+    height: 20px;
+    border-radius: 5px;
+    color: black;
+    font-size: 15px;
+    padding: 5px;
+}
 form textarea {
     width: 265px; /* Match the other input fields */
     height: 100px; /* Keep the height */
@@ -242,9 +242,9 @@ form textarea {
     resize: none;
     outline: none;
 }
-    .textarea::placeholder {
-        text-align: left; /* Align placeholder text */
-    }
+.textarea::placeholder {
+    text-align: left; /* Align placeholder text */
+}
 /*selected outline*/
 form input:focus {
     outline: 2px solid #ffb6c1; /* Neon pink Y2K style */
@@ -370,20 +370,20 @@ footer {
     margin-left: 100px;
 }
 
-    footer p {
-        font-family: "Lucida Console", "Lucida Sans Typewriter", monaco, "Bitstream Vera Sans Mono", monospace;
-        color: #51335e;
-        margin-right: -500px;
-        font-size: 13px;
-    }
+footer p {
+    font-family: "Lucida Console", "Lucida Sans Typewriter", monaco, "Bitstream Vera Sans Mono", monospace;
+    color: #51335e;
+    margin-right: -500px;
+    font-size: 13px;
+}
 
-        footer p a::after {
-            content: ", "; /* Automatically adds a comma with space */
-        }
+footer p a::after {
+    content: ", "; /* Automatically adds a comma with space */
+}
 
-        footer p a:last-of-type::after {
-            content: ""; /* Removes comma from the last link */
-        }
+footer p a:last-of-type::after {
+    content: ""; /* Removes comma from the last link */
+}
 
 .name-link {
     border: none;
@@ -407,9 +407,9 @@ footer {
     font-size: 13px;
 }
 
-    .name-link:hover {
-        background-color: none;
-        border: none;
-        color: #c4549d;
-        background-image: none;
-    }
+.name-link:hover {
+    background-color: none;
+    border: none;
+    color: #c4549d;
+    background-image: none;
+}
